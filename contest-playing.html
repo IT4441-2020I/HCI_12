@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thi đấu</title>
+
+	<link rel="stylesheet" type="text/css" href="resources/css/keyboard.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/simple-header-footer.css">
+
+	<script type="text/javascript" src="resources/js/load-keyboard.js"></script>
+	<script type="text/javascript" src="resources/js/toggle.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="resources/css/contest-playing.css">
+
+	<link rel="stylesheet" type="text/css" href="resources/css/font-def.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/general.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+	<!-- ***** Header Area Start ***** -->
+    <header id="hgtk_header">
+    	<div>
+    		<!-- ***** Logo Start ***** -->
+	        <a href="index.html" class="logo">
+	             <i class="fas fa-keyboard" style="color: white"></i>HGTK 
+	        </a>
+	        <!-- ***** Logo End ***** -->
+	        <!-- ***** Menu Start ***** -->
+	        <ul class="nav">
+	            <li><a href="./lotrinh.html">Học gõ</a></li>
+	            <li><a href="./contest-lobby.html">Thi đấu</a></li>
+	            <li><a href="./bo-go-tu-do.html">Bộ gõ tự do</a></li>
+	            <li><a href="./profile.html">Kết quả học tập</a></li>
+	            <li>
+	                <button id="hgtk_dictionary" data-toggle="dropdown" type="submit">Từ điển▾</button>
+	                <div class="dropdown-menu dictionary" hidden="">
+	                    <div>
+	                        <input type="text" name="key" class="input-dictionary" autocomplete="off" placeholder="Nhập từ cần tra cứu" id="dictionary">
+	                        <i class="fas fa-search" style="color: #fff;margin-left: 10px"></i>
+	                        <div class="result-search" id="result-search"></div>
+	                        <div data-keyboard="steno-keyboard-dictionary.html"></div>
+	                    </div>
+	                </div>
+	            </li> 
+	            <li class="main-button">
+	                <div class="dropdown-toggle last item-menu btn1" data-toggle="dropdown" id="dropdownMenu1">
+	                    <i class="fas fa-user"></i> Xin chào, <b>Người dùng 1▾</b>
+	                    <div class="dropdown-menu account" aria-labelledby="dropdownMenu1" hidden="">
+	                        <div><img src="./resources/assets/images/avatar.jpg" class="avatar" alt=""></div>
+	                        <div class="dropdown-divider"></div>
+	                        <div class="drop-item"><a href="./profile.html" class="item-drop">Thông tin tài khoản</a></div>
+	                        <div class="drop-item"><a href="#" class="item-drop">Đăng xuất</a></div>
+	                    </div>
+	                </div>
+	            </li>
+	        </ul>
+	        <!-- ***** Menu End ***** -->
+    	</div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div id="StenoFreeTyping">
+    	<aside id="LeftSide">
+    		<div>
+    			<div id="TypingStatistic" class="practice-statistic exam-statistic">
+    				<div>
+                        <p>Tổng điểm</p>
+                        <p>69</p>
+                    </div>
+                    <div>
+                        <p>Tiến độ</p>
+                        <p>69%</p>
+                    </div>
+                    <div>
+                        <p>Tốc độ</p>
+                        <p>12 wpm</p>
+                    </div>
+                    <div>
+                        <p>Độ chính xác</p>
+                        <p>96%</p>
+                    </div>
+                    <div>
+                        <p>Số lần đã gõ</p>
+                        <p>2759</p>
+                    </div>
+                    <div>
+                        <p>Số lần gõ đúng</p>
+                        <p>12</p>
+                    </div>
+    			</div>
+    		</div>
+			<button class="hgtk-button" onclick="toggleHidden('#TypingStatistic'); toggleClass('#LeftSide button','hgtk-button-shade'); switchText('#LeftSide button',['Thống kê: Bật','Thống kê: Tắt']);">Thống kê: Bật</button>
+		</aside>
+		<main>
+			<div>
+				<h1>
+                    <i class="fa fa-feather-alt"></i>
+                    Shakesphere Challenge For Pro 2nd 2020
+                    <i class="fa fa-feather-alt"></i>
+                </h1>
+                <div id="TimeCounter">
+                    <div><hr></div>
+                    <div>
+                        <p>Thời gian còn lại</p>
+                        <p><b>00:34:12</b></p>
+                    </div>
+                    <div><hr></div>
+                </div>
+                <p  class="read-text">
+                    Tất nhiên, đã muộn rồi. Mối tình đã trở thành một cái gì vô phương cứu vãn trong đời. Cho nên nếu đã ước như thế thì phải nói là giá mà không lớn lên ở bên nhau, giá mà không có tình cảm mến thương âu yếm của tuổi học trò, không cùng nhau một thời thơ ấu, một lứa bạn bè. Có biết bao nhiêu cánh cửa như thế mà lẽ ra nếu kịp khép lại thì những bước đi vu vơ của tuổi trẻ đã không thể đưa số phận mối tình trôi xa, cuốn nó tới vực thẳm này. Chẳng hạn nếu mà hồi ấy, khi nhập ngũ rồi anh không gặp lại Phương nữa. Anh cứ một mạch tuốt vào Nam, còn Phương thì đằng thẳng vào đại học...<br>
+                    Hồi ấy, sau ba tháng luyện quân ở Nhã Nam, tiểu đoàn 36 tân binh nhận lệnh lên đường vào B ngay mà không theo thông lệ mười ngày phép cho bộ đội, không có cả thời gian an dưỡng. Để bù lại lính tráng sẽ ngồi tàu hỏa vào tận Vinh. Bấy giờ, Giôn-xơn tạm ngừng ném bom để rền dừ, quân ta thừa cơ tiến binh. Từ Yên Thế tiểu đoàn hành quân như gió cuốn, khi về tới ga Văn Điển thì hóa ra còn dôi ra ba giờ đồng hồ để chờ tàu quân sự. Cả D có mỗi chục thằng lính Hà Nội mặt đứa nào đứa nấy... Lưỡng lự mãi rồi tiểu đoàn trưởng cũng cho mấy thằng ở nội thành và Thanh Trì được hưởng hồng phúc. Lúc bấy giờ là bốn giờ chiều hạn tới sáu rưỡi phải có mặt để lên tàu. Chậm một phút coi như đào ngũ. Có thằng rú lên vì sướng quá. Kiên chạy lao ra đường cùng mấy đứa bạn bám đuôi ô tô tải. Qua ga, ô tô chưa kịp giảm tốc, nhảy đại xuống, ngã trẹo chân. Thế là phải khập khà khập khiễng. Thật đúng là chẳng có bút lực nào tả nổi tâm trạng của Kiên trên đường phi về phố nhà, song cũng chẳng bút nào tả xiết cảm giác thất vọng, đất sụt dưới chân, khi anh vào tới trong sân. Đi sơ tán cả rồi. Với những cửa sổ đóng chặt lại bằng gỗ ván ngôi nhà mù lòa nhìn anh. Khoảnh sân trước nhà chiều nào cũng đầy trẻ con và góc sân nơi máy nước thì các bà các chị, giờ đây trống rỗng, vắng ngắt, và lạnh lùng biết bao. Trên dây phơi và trên cặp xà lệch lòng thòng những mảnh giẻ rách như cố ý chào đón anh bằng sự thảm thương.<br>
+                    Chỉ có vài gia đình có người ở lại Hà Nội. Hầu hết các phòng đều khóa trái. Những hàng chữ viết trên cửa. Vợ chồng, con cái, mỗi người mỗi phương dặn dò nhau, nhắn nhe nhau trên hòm thư ngỏ ấy. Ba tháng trời anh không được một lá thư nào của Phương, giờ đây, trên cánh cửa sơn xanh, im ỉm khóa bằng một khóa đồng to tướng anh cũng chẳng thấy một dòng nào để lại. Phòng anh thì Phương giữ chìa. Anh đi lên gác ba. Không một bóng người. Hành lang tối om. Bụi bặm. Mạng nhện. Sự tàn phá âm thầm của cô tịch. Anh muốn viết lại cho Phương mấy dòng. Nhưng không giấy bút. Cầu thang kêu răng rắc. Anh xuống tầng trệt. Ánh hoàng hôn huy hoàng màu hồng nhạt đã tắt rồi.
+                </p>
+				<!-- <textarea id="output" placeholder="Gõ văn bản của bạn tại đây..."></textarea> -->
+			</div>
+			<div class="typing-assist">
+				<div id="keyboards">
+					<div data-keyboard="standard-keyboard.html"></div>
+					<div data-keyboard="steno-keyboard.html"></div>
+				</div>
+				<div>
+					<button class="hgtk-button" onclick="toggleHidden('#keyboards'); toggleClass('main button','hgtk-button-shade'); switchText('main button',['Bàn phím hỗ trợ: Bật','Bàn phím hỗ trợ: Tắt']);">Bàn phím hỗ trợ: Bật</button>
+				</div>
+			</div>
+		</main>
+		<aside id="RightSide">
+			<div>
+				<p class="log-title">Bảng xếp hạng</p>
+    			<div id="Leaderboard" class="rate">
+                    <table class="rate-table">
+                        <tr>
+                            <td>1</td>
+                            <td><img class="rate-image" src="resources/assets/images/avatar.jpg"></td>
+                            <td>99đ</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img class="rate-image" src="resources/assets/images/avatar.jpg"></td>
+                            <td>98đ</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img class="rate-image" src="resources/assets/images/avatar.jpg"></td>
+                            <td>97đ</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img class="rate-image" src="resources/assets/images/avatar.jpg"></td>
+                            <td>97đ</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img class="rate-image" src="resources/assets/images/avatar.jpg"></td>
+                            <td>97đ</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img class="rate-image" src="resources/assets/images/avatar.jpg"></td>
+                            <td>97đ</td>
+                        </tr>
+                        <tr>
+                            <td>&ensp;</td>
+                            <td>...</td>
+                            <td>&ensp;</td>
+                        </tr>
+                        <tr class="you">
+                            <td>50</td>
+                            <td><img class="rate-image" src="resources/assets/images/avatar.jpg"></td>
+                            <td>80đ</td>
+                        </tr>
+                        <tr>
+                            <td>&ensp;</td>
+                            <td>...</td>
+                            <td>&ensp;</td>
+                        </tr>
+                    </table>
+                </div>
+    		</div>
+			<button class="hgtk-button" onclick="toggleHidden('#Leaderboard'); toggleHidden('#RightSide .log-title'); toggleClass('#RightSide > button','hgtk-button-shade'); switchText('#RightSide > button',['Xếp hạng: Bật','Xếp hạng: Tắt']);">Xếp hạng: Bật</button>
+		</aside>
+    </div>
+	<footer id="hgtk_footer">
+		<p>Copyright &copy; 2020 Steno</p>
+	</footer>
+
+	<script type="text/javascript">
+		window.addEventListener("load", (event)=>{
+			loadKeyboards();
+		})
+	</script>
+
+	<script type="text/javascript" src="resources/js/jquery-2.1.0.min.js"></script>
+	<!-- <script type="text/javascript" src="resources/js/ploverdemo.js"></script> -->
+</body>
+</html>	
