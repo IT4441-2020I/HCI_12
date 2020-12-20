@@ -1,0 +1,61 @@
+:root {
+	--color-transparent: rgba(0,0,0,0);
+	--color-primary: #393536;
+	--color-background: #FBFBFB;
+	--color-surface: #FFFFFF;
+	--color-error: #D42019;
+	--color-success: #5ACB2B;
+
+	--color-primary-tint: #BBBABA;
+	--color-error-tint: #EEA6A3;
+	--color-success-tint: #B3E79E;
+
+	--color-on-primary: #FFFFFF;
+	--color-on-primary-shade: #8F8F8F;
+	--color-on-background: #393536;
+	--color-on-background-shade: #868484;
+	--color-on-surface: #393536;
+	--color-on-surface-shade: #868484;
+	--color-on-error: #393536;
+
+	--transition-in: 0.5s;
+	--transition-out: 0.25s;
+}
+[hidden] { display: none !important; }
+
+body,html{
+	font-family: 'JetBrains Mono', 'Arial', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+.read-text{
+	font-family: 'Rokkitt', "Times New Roman", serif;
+}
+
+/*
+	Scroll bar
+*/
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--color-primary-tint); 
+	border: 1px solid var(--color-primary-tint);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--color-on-primary-shade); 
+	transition: var(--transition-out);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-on-primary); 
+	transition: var(--transition-in);
+}
+

@@ -1,0 +1,332 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./resources/css/profile-style.css">
+    <link rel="stylesheet" href="./resources/css/progress-circle.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart', 'calendar'], 'language' :'vi'});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Tháng', 'Tốc độ (wpm)', 'Độ chính xác (%)'],
+          ['Tháng 1', 55, 40],
+          ['Tháng 2', 65, 60],
+          ['Tháng 3', 73, 65],
+          ['Tháng 4', 80, 77],
+          ['Tháng 5', 82, 81],
+          ['Tháng 6', 84, 85],
+          ['Tháng 7', 80, 82],
+          ['Tháng 8', 73, 90],
+          ['Tháng 9', 100, 91],
+          ['Tháng 10', 114, 94],
+          ['Tháng 11', 119, 90],
+          ['Tháng 12', 125, 89]
+        ]);
+
+
+       var dataTable = new google.visualization.DataTable();
+       dataTable.addColumn({ type: 'date', id: 'Date' });
+       dataTable.addColumn({ type: 'number', id: 'Won/Loss' });
+       dataTable.addRows([
+          [ new Date(2020, 1, 13), 1 ],
+          [ new Date(2020, 1, 20), 5 ],
+          [ new Date(2020, 3, 2), 3 ],
+          [ new Date(2020, 3, 10), 20 ],
+          [ new Date(2020, 3, 17), 10 ],
+          [ new Date(2020, 0, 5), 15 ],
+          [ new Date(2020, 0, 2), 12 ],
+          [ new Date(2020, 7, 2), 11 ],
+          [ new Date(2020, 7, 4), 4 ],
+          [ new Date(2020, 7, 5), 14 ],
+          [ new Date(2020, 7, 6), 13 ],
+          [ new Date(2020, 8, 10), 19 ],
+          [ new Date(2020, 8, 11), 20 ],
+          [ new Date(2020, 8, 12), 16 ],
+          [ new Date(2020, 8, 14), 10 ],
+          [ new Date(2020, 8, 16), 17 ],
+          [ new Date(2020, 8, 20), 8 ],
+          [ new Date(2020, 8, 21), 18 ],
+        ]);
+
+       var chart_calendar = new google.visualization.Calendar(document.getElementById('calendar'));
+
+       var calendar_options = {
+         title: ''
+       };
+
+       chart_calendar.draw(dataTable, calendar_options);
+
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+
+        var options = {
+          curveType: 'function',
+          pointSize: 5,
+          series: {   
+            0: {targetAxisIndex: 0, pointshape: 'circle'},
+            1: {targetAxisIndex: 1, pointshape: 'circle'}
+          },
+          vAxes: {
+            0: {title: 'Tốc độ'},
+            1: {title: 'Độ chính xác'}
+          },
+          legend: { position: 'top' }
+        };
+       
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/keyboard-dictionary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="resources/css/font-def.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/general.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/simple-header-footer.css">
+  </head>
+  <body>
+    <header id="hgtk_header">
+      <div>
+        <!-- ***** Logo Start ***** -->
+          <a href="index.html" class="logo">
+               <i class="fas fa-keyboard" style="color: white"></i>HGTK 
+          </a>
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+              <li><a href="./lotrinh.html">Học gõ</a></li>
+              <li><a href="./contest-lobby.html">Thi đấu</a></li>
+              <li><a href="#our-classes">Bộ gõ tự do</a></li>
+              <li><a href="./profile.html">Kết quả học tập</a></li>
+              <li>
+                  <button id="hgtk_dictionary" data-toggle="dropdown" type="submit">Từ điển▾</button>
+                  <div class="dropdown-menu dictionary" hidden="">
+                      <div>
+                          <input type="text" name="key" class="input-dictionary" autocomplete="off" placeholder="Nhập từ cần tra cứu" id="dictionary">
+                          <i class="fas fa-search" style="color: #fff;margin-left: 10px"></i>
+                          <div class="result-search" id="result-search"></div>
+                          <div data-keyboard="steno-keyboard-dictionary.html"></div>
+                      </div>
+                  </div>
+              </li> 
+              <li class="main-button">
+                  <div class="dropdown-toggle last item-menu btn1" data-toggle="dropdown" id="dropdownMenu1">
+                      <i class="fas fa-user"></i> Xin chào, <b>Người dùng 1▾</b>
+                      <div class="dropdown-menu account" aria-labelledby="dropdownMenu1" hidden="">
+                          <div><img src="./resources/assets/images/avatar.jpg" class="avatar" alt=""></div>
+                          <div class="dropdown-divider"></div>
+                          <div class="drop-item"><a href="./profile.html" class="item-drop">Thông tin tài khoản</a></div>
+                          <div class="drop-item"><a href="#" class="item-drop">Đăng xuất</a></div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <!-- ***** Menu End ***** -->
+      </div>
+    </header>
+    <main id="profile_container" style="margin-top: 80px;">
+      <!-- <div id="header_space"></div> -->
+      <div class="row" id="ifbe">
+        <div class="profile" id="i99k">
+          <img id="ixqj" src="resources/imgs/profile/avatar1.jpg"/>
+          <div id="il0g">Thân Minh Duy</div>
+          <div id="irgp">duypro</div>
+          <img src="resources/imgs/profile/stars.png"/>
+          <div id="ihlfr">Chuyên gia tốc ký</div>
+          <div class="row" id="i252a">
+            <img id="ittbu" src="resources/imgs/profile/flag-vi.png"/>
+            <div id="ifo23">Vietnam</div>
+          </div>
+          <div class="row" id="i09k3">
+            <div class="cell" id="ib3f4">
+              <img id="iqclm" src="resources/imgs/profile/icon-mail.png"/>
+              <div id="irbbb">deptrai@hocgioi.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="cell" id="iu0j">
+          <div class="row" id="ifgwe">
+            <div class="cell">
+              <div id="ig60a"><b>Kỹ năng</b></div>
+              <div class="row" id="ibxlp">
+                <div class="cell" id="ij9n3">
+                  <div id="iy35i">Lượng từ đã gõ</div>
+                  <div id="iqi71">75837 từ</div>
+                </div>
+                <div class="cell" id="iw2w2">
+                  <div id="iem4h">Tốc độ hiện tại</div>
+                  <div id="i3jaq">125 wpm</div>
+                </div>
+                <div class="cell" id="iy7e1">
+                  <div id="iuocg">Độ chính xác</div>
+                  <div id="iwce8">89 %</div>
+                </div>
+              </div>
+              <div class="row" id="iu3xe">
+                <div class="cell" id="i1lts">
+                  <img id="id32l" src="resources/imgs/profile/icon-achivement-1.svg" title="Tốc độ: Hoàn thành bài thi sớm"/>
+                  <img id="id5dh" src="resources/imgs/profile/icon-achivement-2.svg" title="Khởi đầu: Hoàn thành bài học đầu tiên"/>
+                  <img id="irkbh" src="resources/imgs/profile/icon-achivement-3.svg" title="Thăng cấp: Lên cấp độ thành thạo"/>
+                  <div id="ic2jl">Đạt được 3/20 thành tích</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="irg5b">
+            <div class="cell" id="is3ep">
+              <div id="i1dlr">Kết quả học tập</div>
+              <div class="row" id="i7vyl">
+                <div class="cell" id="if2qe">
+                  <div id="i86pd"><b>Gõ phím</b></div>
+                  <div class="row" id="i67y4d">
+                  <div class="clearfix">
+                    <div class="c100 p40 small">
+                      <span>40%</span>
+                      <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="cell" id="if2qe">
+                  <div id="i86pd"><b>Âm chính</b></div>
+                  <div class="row" id="i67y4d">
+                  <div class="clearfix">
+                    <div class="c100 p50 small">
+                      <span>50%</span>
+                      <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="cell" id="if2qe">
+                  <div id="i86pd"><b>Âm đầu</b></div>
+                  <div class="row" id="i67y4d">
+                  <div class="clearfix">
+                    <div class="c100 p30 small">
+                      <span>30%</span>
+                      <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="cell" id="if2qe">
+                  <div id="i86pd"><b>Âm cuối</b></div>
+                  <div class="row" id="i67y4d">
+                  <div class="clearfix">
+                    <div class="c100 p70 small">
+                      <span>70%</span>
+                      <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="cell" id="if2qe">
+                  <div id="i86pd"><b>Chữ số</b></div>
+                  <div class="row" id="i67y4d">
+                  <div class="clearfix">
+                    <div class="c100 p90 small">
+                      <span>90%</span>
+                      <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="cell" id="if2qe">
+                  <div id="i86pd"><b>Gõ văn bản</b></div>
+                  <div class="row" id="i67y4d">
+                  <div class="clearfix">
+                    <div class="c100 p95 small">
+                      <span>95%</span>
+                      <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div id="ioa4j">Mức độ thành thạo từng phần</div>
+              <div class="row" id="iepm3">
+                <div class="cell" id="iqyyp">
+                  <div id="chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="ixoo3">
+            <div class="cell" id="ijaig">
+              <div id="i6vsg">Nhật ký hoạt động</div>
+                <div id="calendar"></div>
+              <div class="row" id="iv288">
+                <div class="cell" id="ihevl">
+                  <div id="if605">Hoạt động học tập</div>
+                  <div class="row read-text" id="iqg2si">
+                    <div class="cell" id="ih7ely">
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                    </div>
+                    <div class="cell" id="i07ykb">
+                      <div id="i7tkdk">Âm đầu (kiểm tra lần 1)</div>
+                      <div id="i7tkdk">Âm đầu (kiểm tra lần 1)</div>
+                      <div id="i7tkdk">Âm đầu (kiểm tra lần 1)</div>
+                      <div id="i7tkdk">Âm đầu (kiểm tra lần 1)</div>
+                      <div id="i7tkdk">Âm đầu (kiểm tra lần 1)</div>
+                    </div>
+                  </div>
+                  <div id="i5555"><b>Xem thêm</b></div>
+                </div>
+                <div class="cell" id="i92uf">
+                  <div id="if605">Hoạt động thi đấu</div>
+                  <div class="row read-text" id="i7cybu">
+                    <div class="cell" id="iqogwc">
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                      <div id="imqhvo">15 phút trước</div>
+                    </div>
+                    <div class="cell" id="i2yq3o">
+                      <div id="i7tkdk">TypeMaster (round 15)</div>
+                      <div id="i7tkdk">TypeMaster (round 15)</div>
+                      <div id="i7tkdk">TypeMaster (round 15)</div>
+                      <div id="i7tkdk">TypeMaster (round 15)</div>
+                      <div id="i7tkdk">TypeMaster (round 15)</div>
+                    </div>
+                  </div>
+                  <div id="i5555"><b>Xem thêm</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="hgtk_footer">
+      <p>Copyright &copy; 2020 Steno</p>
+    </footer>
+  </body>
+  <html>

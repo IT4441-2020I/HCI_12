@@ -1,0 +1,724 @@
+{
+	"name": "Khóa học gõ tốc ký",
+	"sections":[
+		{
+			"name": "Làm quen bàn phím tốc ký",
+			"time-estimate": "1 giờ 10 phút",
+			"description": "Giúp bạn làm quen với phương pháp gõ tốc ký bằng cách luyện tập gõ bàn phím",
+			"lectures": [
+				{
+					"name": "Bàn phím tốc ký",
+					"time-estimate": "20 phút",
+					"description":"Vị trí các phím, cách đặt tay trên bàn phím tốc ký",
+					"done": true,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-intro-stenokeyboard.html"
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-key.html"
+						}
+					]
+				},
+				{
+					"name": "Gõ tốc ký cơ bản",
+					"time-estimate": "15 phút",
+					"description":"Luyện gõ theo phương pháp tốc ký bằng cách gõ đồng thời nhiều phím",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-intro.html"
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-combine-key.html"
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "15 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": true,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-key.html"
+						},
+						{
+							"title": "Bài kiểm tra 2",
+							"panel": "panel-exam-combine-key.html"
+						}
+					]
+				},
+				{
+					"name": " Giới thiệu bộ quy tắc gõ tốc ký",
+					"time-estimate": "10 phút",
+					"description":"Cho bạn cái nhìn tổng quan về số lượng và nội dung các quy tắc gõ",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-doc-tabs.html"
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-word.html"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Học gõ âm đầu",
+			"time-estimate": "2 giờ 55 phút",
+			"description": "Luyện gõ các âm đầu trong hệ thống từ tiếng Việt",
+			"lectures": [
+				{
+					"name": "s, t, c, k, h, r, b",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["s", "t", "c", "k", "h", "r", "b"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "th, kh, ph, tr",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["th", "kh", "ph", "tr"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				},
+				{
+					"name": "ng/ngh, g/gh, l, m, n",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["ng/ngh", "g/gh", "l", "m", "n"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "ch, d, đ, gi",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["ch", "d", "đ", "gi"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				},
+				{
+					"name": "p, q, v",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["p", "q", "v"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Học gõ âm chính",
+			"time-estimate": "3 giờ 25 phút",
+			"description": "Luyện gõ các âm chính trong hệ thống từ tiếng Việt",
+			"lectures": [
+				{
+					"name": "a, ă, â",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["a", "ă", "â"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "e, ê, o, ô",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["e", "ê", "o", "ô"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "i, ia, iê",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["i", "ia", "iê"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				},
+				{
+					"name": "u, uô, ua, uy, uê",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["u", "uô", "ua", "uy", "uê"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "ư, ươ, ưa",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["ư", "ươ", "ưa"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				},
+				{
+					"name": "oa/ua, oă/uă, oe/ue",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["oa/ua", "oă/uă", "oe/ue"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "uyê/uya, uơ, uâ",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["uyê/uya", "uơ", "uâ"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				},
+				{
+					"name": "Dấu thanh",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["huyền", "sắc", "hỏi", "ngã", "nặng"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Học gõ âm cuối",
+			"time-estimate": "1 giờ 40 phút",
+			"description": "Luyện gõ các âm cuối trong hệ thống từ tiếng Việt",
+			"lectures": [
+				{
+					"name": "-n, -m, -c, -ch",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["-n", "-m", "-c", "-ch"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "-o, -u, -i, -y",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["-o", "-u", "-i", "-y"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "-p, -t, -ng, -nh",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": null,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["-p", "-t", "-ng", "-nh"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Học gõ chữ số",
+			"time-estimate": "25 phút",
+			"description": "Luyện gõ các chữ số",
+			"lectures": [
+				{
+					"name": "Gõ chữ số 0-9",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Lý thuyết",
+							"panel": "panel-steno-rule-typing.html",
+							"config": {
+								"type": "learn-typing-spell",
+								"list-spell": ["1-9", "0"]
+							}
+						},
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-spell.html",
+							"config": {
+								"type": "practice-spell"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-spell.html"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Kỹ năng gõ tổng hợp",
+			"time-estimate": "1 giờ 25 phút",
+			"description": "Luyện gõ theo các văn bản",
+			"lectures": [
+				{
+					"name": "Gõ các từ thông dụng",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-word.html",
+							"config": {
+								"type": "practice-word"
+							}
+						}
+					]
+				},
+				{
+					"name": "Gõ các từ khó, ít dùng",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-word.html",
+							"config": {
+								"type": "practice-word"
+							}
+						}
+					]
+				},
+				{
+					"name": "Gõ từ ngữ chuyên ngành",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-word.html",
+							"config": {
+								"type": "practice-word"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-word.html"
+						}
+					]
+				},
+				{
+					"name": "Soạn thảo thơ",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-paragraph.html",
+							"config": {
+								"type": "practice-paragraph"
+							}
+						}
+					]
+				},
+				{
+					"name": "Soạn thảo văn bản văn học",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-paragraph.html",
+							"config": {
+								"type": "practice-paragraph"
+							}
+						}
+					]
+				},
+				{
+					"name": "Soạn thảo văn bản chuyên ngành",
+					"time-estimate": "15 phút",
+					"description":"",
+					"done": true,
+					"content": [
+						{
+							"title": "Luyện tập",
+							"panel": "panel-practice-paragraph.html",
+							"config": {
+								"type": "practice-paragraph"
+							}
+						}
+					]
+				},
+				{
+					"name": "Kiểm tra",
+					"time-estimate": "10 phút",
+					"description":"Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu",
+					"done": false,
+					"content": [
+						{
+							"title": "Bài kiểm tra 1",
+							"panel": "panel-exam-paragraph.html"
+						}
+					]
+				}
+			]
+		}
+	]
+}

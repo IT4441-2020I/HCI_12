@@ -1,0 +1,148 @@
+.main-contest-play {
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*margin-left: -70px;*/
+}
+.divider {
+	width: 200px;
+	background-color: #000;
+	height: 2px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.main-contest-play-divider {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.main-contest-play-body-text {
+	overflow: auto;
+	width: 90%;
+	height: 350px;
+}
+.main-contest-play-body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.parameters-contest-content {
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+.parameters-contest-content-title {
+	font-size: 15px;
+	padding: 5px 0px 5px 0px;
+}
+.parameters-contest-content-des {
+	font-size: 25px;
+	padding-bottom: 10px
+}
+.title-fix-sum-score {
+	font-size: 20px;
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.parameters-contest {
+	width: 100%;
+}
+.content-fix-sum-score {
+	font-size: 35px;
+}
+.main-contest-play-body-support {
+	width: 100%;
+	text-align: right;
+}
+.main-contest-play-header {
+	font-size: 35px;
+	text-align: center;
+}
+.compoe {
+	margin: 0;
+}
+.compoe>*:nth-child(1){
+	margin: 0;
+	padding: 5px;
+}
+.compoe>*:nth-child(3){
+	margin: 0;
+	padding: 5px;
+}
+.button-support {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 5px;
+	width: 15%;
+}
+.button-support a {
+	color: black;
+}
+
+
+.button-support-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20px
+}
+.load-keyboard-and-hand {
+
+}
+.rate {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: center;
+
+}
+.rate-image {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+.rate-table td {
+	padding :5px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.rate-table tr {
+	border-bottom: 1px solid black;
+}
+.rate-table {
+	border: 1px solid black;
+	margin-left: -10px;
+	background-color: #fff;
+}
+.rate-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.you{
+	background-color: green !important;
+	color: white;
+}
+.button-exit {
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 20px;
+}
+.main-contest-prepare-body-support {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+
+}
+.main-contest-prepare-body-support-button {
+	border: 1px solid black;
+	border-radius : 10px;
+	padding: 10px;
+}
+.main-contest-prepare-body-support-button a {
+	color: black;
+}
+.main-contest-prepare-body-support-button:hover {
+	background-color: #eee;
+}

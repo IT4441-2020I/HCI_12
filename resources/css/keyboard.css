@@ -1,0 +1,373 @@
+#stenoKeyboard{
+	/* Positioning */
+	left: 555px;
+	top: 228px;
+
+	/* Box */
+	width: 100%;
+	height: 100%;
+	/*padding: 10px;*/
+	/*border: 1px solid #000000;*/
+	margin: 0;
+
+	/* Colors */
+	background-color: var(--color-transparent);
+}
+
+.stenoNumberBar {
+	/* Box */
+	width: 100%;
+	height: 20%;
+	padding: 0;
+	border: 0;
+	margin: 0 0 0.625% 0;
+}
+
+.stenoUpperBank {
+	/* Box */
+	width: 100%;
+	height: 20%;
+	padding: 0;
+	border: 0;
+	margin: 0.625% 0 0.625% 0;
+}
+
+.stenoLowerBank {
+	/* Box */
+	width: 100%;
+	height: 20%;
+	padding: 0;
+	border: 0;
+	margin: 0.625% 0 0.625% 0;
+}
+
+.stenoVowelKeys {
+	/* Box */
+	width: 100%;
+	height: 20%;
+	padding: 0;
+	border: 0;
+	margin: 0.625% 0 1% 0;
+}
+
+.numberBar {
+	/* Positioning */
+	float: left;
+
+	/* Box */
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+	/* Color */
+	color: var(--color-on-primary);
+
+	/* Text */
+	font-family: sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	line-height: 2em;
+
+	/* Styling */
+	-webkit-border-radius: 0.9375% / 12.5%;
+	-moz-border-radius: 0.9375% / 12.5%;
+	border-radius: 0.9375% / 12.5%;
+}
+
+.stenoKey {
+	/* Positioning */
+	float: left;
+
+	/* Box */
+	width: 8.65%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	margin: 0 0.75% 0 0.75%;
+
+	/* Color */
+	color: var(--color-on-primary);
+	background-color: var(--color-primary);
+
+	/* Text */
+	font-family: sans-serif;
+	font-size: 1em;
+	text-align: center;
+	line-height: 2em;
+}
+
+.stenoKeyNumber {
+	/* Positioning */
+	float: left;
+
+	/* Box */
+	width: 4%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	margin: 0 0.075% 0 0.075%;
+
+	/* Color */
+	color: var(--color-on-primary);
+	background-color: var(--color-primary);
+
+	/* Text */
+	font-family: sans-serif;
+	font-size: 0.5em;
+	text-align: center;
+	line-height: 2em;
+}
+
+.square {
+	/* Styling */
+	-webkit-border-radius: 12.5% / 7.5%;
+	-moz-border-radius: 12.5% / 7.5%;
+	border-radius: 12.5% / 7.5%;
+}
+
+.rounded {
+	/* Styling */
+	-webkit-border-radius: 12.5% / 7.5%;
+	-webkit-border-bottom-right-radius: 50% 30%;
+	-webkit-border-bottom-left-radius: 50% 30%;
+	-moz-border-radius: 12.5% / 7.5%;
+	-moz-border-radius-bottomright: 50% 30%;
+	-moz-border-radius-bottomleft: 50% 30%;
+	border-radius: 12.5% / 7.5%;
+	border-bottom-right-radius: 50% 30%;
+	border-bottom-left-radius: 50% 30%;
+}
+
+#stenoKey-0, #stenoKey-10 {
+	/* Box */
+	margin-left: 0;
+}
+
+#stenoKey-9, #stenoKey-19 {
+	/* Box */
+	margin-right: 0;
+}
+
+#stenoKey-20 {
+	/* Box */
+	margin-left: 30.625%;
+	margin-right: 0.3125%;
+}
+
+#stenoKey-21 {
+	/* Box */
+	margin-left: 0.3125%;
+	margin-right: 1.5625%;
+}
+
+#stenoKey-22 {
+	/* Box */
+	margin-left: 1.5625%;
+	margin-right: 0.3125%;
+}
+
+#stenoKey-23 {
+	/* Box */
+	margin-left: 0.3125%;
+}
+#stenoKeyNumberBar {
+	/* Positioning */
+	float: left;
+
+	/* Box */
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+	/* Color */	
+	color: var(--color-on-primary);
+	background-color: var(--color-primary);
+	
+	/* Text */
+	font-family: sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	line-height: 2em;	
+
+	/* Styling */
+	-webkit-border-radius: 0.9375% / 12.5%;
+	-moz-border-radius: 0.9375% / 12.5%;
+	border-radius: 0.9375% / 12.5%;
+}
+.input-key-steno {
+	width: 80%;
+	color: black;
+	text-align: center;
+	text-transform:uppercase
+}
+#stdKeyboard{
+	/* Positioning */
+	left: 15px;
+	top: 228px;
+	
+	/* Box */
+	width: 100%; /* will fit 15 regular-sized keys horizontally */
+	height: 100%; /* will fit 5 regular-sized keys vertically */
+	/*padding: 10px;*/
+	/*border: 1px solid	#000000;*/
+	margin: 0;
+
+	/* Colors */
+	background-color: var(--color-transparent);
+}
+
+.stdRow {
+	/* Box */
+	width: 100%;
+	height: 20%; /* will fit 5 rows in the keyboard */
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.stdKey {
+	/* Positioning */
+	float: left;
+	overflow: hidden;
+
+	/* Box */
+	width: 6%; /* 100% / 15 (keys) - (2 (left and right) * 0.333% (margin)) */
+	height: 90%; /* 100% - (15 (ratio across width / row height) * (2 (left and right) * 0.333% (margin))) */
+	padding: 0;
+	border: 0;
+	margin: 0.333%; /* width and height depend on this value. change accordingly */
+
+	/* Colors */
+	color: var(--color-on-primary);
+	background-color: var(--color-primary);
+
+	/* Text */
+	font-family: sans-serif;
+	font-size: 0.75em; /* 250px (stdKeyboard height) * 20% (stdRow height) * 90% (stdKey height) / 3 */
+	font-weight: bold;
+	line-height: 1.5em; /* 250px (stdKeyboard height) * 20% (stdRow height) * 90% (stdKey height) */
+	text-align: center;
+
+	/* Styling */
+	-webkit-border-radius: 10%;
+	-moz-border-radius: 10%;
+	border-radius: 10%;
+}
+
+#stdKeyBackspace{
+	/* Box */
+	width: 12.666%;
+}
+
+#stdKeyTab{
+	/* Box */
+	width: 9.333%;
+}
+
+#stdKeyBackslash{
+	/* Box */
+	width: 9.333%;
+}
+
+#stdKeyCapsLock{
+	/* Box */
+	width: 11%;
+}
+
+#stdKeyEnter{
+	/* Box */
+	width: 14.333%;
+}
+
+#stdKeyLeftShift{
+	/* Box */
+	width: 14.333%;
+}
+
+#stdKeyRightShift{
+	/* Box */
+	width: 17.666%;
+}
+
+#stdKeyLeftControl{
+	/* Box */
+	width: 9.333%;
+}
+
+#stdKeyLeftAlt{
+	/* Box */
+	width: 9.333%;
+}
+
+#stdKeySpace{
+	/* Box */
+	width: 39.333%;
+}
+
+#stdKeyRightAlt{
+	/* Box */
+	width: 9.333%;
+}
+
+#stdKeyRightControl{
+	/* Box */
+	width: 9.333%;
+}
+
+.upper {
+	/* Positionning */
+	float: left;
+	
+	/* Box */
+	height: 50%;
+	width: 100%;
+
+	/* Text */
+	line-height: 1.5em; /* 250px (stdKeyboard height) * 20% (stdRow height) * 90% (stdKey height) / 3 * 2 */
+	text-align: center;
+}
+
+.lower {
+	/* Positioning */
+	float: left;
+	
+	/* Box */
+	height: 50%;
+	width: 100%;
+	
+	/* Text */
+	line-height: 1em; /* 250px (stdKeyboard height) * 20% (stdRow height) * 90% (stdKey height) / 3 */
+	text-align: center;
+}
+
+.lower-left {
+	/* Positioning */
+	float: left;
+
+	/* Box */
+	height: 50%;
+	width: 100%;
+
+	/* Text */
+	font-size: 0.75em;
+	line-height: 0.5em; /* 250px (stdKeyboard height) * 20% (stdRow height) * 90% (stdKey height) / 3 */
+	text-align: left;
+}
+
+.not-used-key{
+	color: var(--color-on-primary-shade);
+	background-color: var(--color-primary-tint);
+}
+.used-key{
+	background-color: var(--color-primary);
+}
+.used-number-key{
+	background-color: var(--color-primary);
+}
+.sub-key-symbol{
+	color: var(--color-on-primary-shade);
+}

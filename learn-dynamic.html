@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài học</title>
+
+	<link rel="stylesheet" type="text/css" href="resources/css/learn-general-with-header.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/keyboard.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/simple-header-footer.css">
+	<script type="text/javascript" src="resources/js/ui-learn.js"></script>
+	<script type="text/javascript" src="resources/js/load-keyboard.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="resources/css/font-def.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/general.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+	<!-- ***** Header Area Start ***** -->
+    <header id="hgtk_header">
+    	<div>
+    		<!-- ***** Logo Start ***** -->
+	        <a href="index.html" class="logo">
+	             <i class="fas fa-keyboard" style="color: white"></i>HGTK 
+	        </a>
+	        <!-- ***** Logo End ***** -->
+	        <!-- ***** Menu Start ***** -->
+	        <ul class="nav">
+	            <li><a href="./lotrinh.html">Học gõ</a></li>
+	            <li><a href="./contest-lobby.html">Thi đấu</a></li>
+	            <li><a href="#our-classes">Bộ gõ tự do</a></li>
+	            <li><a href="./profile.html">Kết quả học tập</a></li>
+	            <li>
+	                <button id="hgtk_dictionary" data-toggle="dropdown" type="submit">Từ điển▾</button>
+	                <div class="dropdown-menu dictionary" hidden="">
+	                    <div>
+	                        <input type="text" name="key" class="input-dictionary" autocomplete="off" placeholder="Nhập từ cần tra cứu" id="dictionary">
+	                        <i class="fas fa-search" style="color: #fff;margin-left: 10px"></i>
+	                        <div class="result-search" id="result-search"></div>
+	                        <div data-keyboard="steno-keyboard-dictionary.html"></div>
+	                    </div>
+	                </div>
+	            </li> 
+	            <li class="main-button">
+	                <div class="dropdown-toggle last item-menu btn1" data-toggle="dropdown" id="dropdownMenu1">
+	                    <i class="fas fa-user"></i> Xin chào, <b>Người dùng 1▾</b>
+	                    <div class="dropdown-menu account" aria-labelledby="dropdownMenu1" hidden="">
+	                        <div><img src="./resources/assets/images/avatar.jpg" class="avatar" alt=""></div>
+	                        <div class="dropdown-divider"></div>
+	                        <div class="drop-item"><a href="./profile.html" class="item-drop">Thông tin tài khoản</a></div>
+	                        <div class="drop-item"><a href="#" class="item-drop">Đăng xuất</a></div>
+	                    </div>
+	                </div>
+	            </li>
+	        </ul>
+	        <!-- ***** Menu End ***** -->
+    	</div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+	<aside id="learn_sidebar" class="learn-sidebar-collapsed" onmouseenter="setSidebarExpand(true)" onmouseleave="setSidebarExpand(false)">
+		<div>
+			<p>Lộ trình</p>
+			<img src="resources/imgs/left-arrow-angle-big-gross-symbol.svg" onclick="toggleSidebar()">
+		</div>
+		<div>
+			<div>
+				<img src="resources/imgs/roadpath.png">
+			</div>
+			<ol id="list_lectures">
+			</ol>
+		</div>
+	</aside>
+	<main>
+		<div id="learn_main_title">
+			<p>1. Làm quen bàn phím tốc ký</p>
+			<h1>1.2. Bàn phím tốc ký</h1>
+		</div>
+		<div id="list_panels"></div>
+		<div id="bottom_buttons">
+			<div>
+				<a class="learn-button">Bài trước</a>
+				<p class="read-text"></p>
+			</div>
+			<div>
+				<a class="learn-button">Làm lại bài thi</a>
+				<p class="read-text"></p>
+			</div>
+			<div>
+				<a class="learn-button">Bài kế tiếp</a>
+				<p class="read-text"></p>
+			</div>
+		</div>
+	</main>
+	<footer id="hgtk_footer">
+		<p>Copyright &copy; 2020 Steno</p>
+	</footer>
+</body>
+</html>

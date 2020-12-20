@@ -1,0 +1,317 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./resources/css/contest-style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/font-def.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/general.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/simple-header-footer.css">
+  </head>
+  <body>
+    <header id="hgtk_header">
+      <div>
+        <!-- ***** Logo Start ***** -->
+          <a href="index.html" class="logo">
+               <i class="fas fa-keyboard" style="color: white"></i>HGTK 
+          </a>
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+              <li><a href="./lotrinh.html">Học gõ</a></li>
+              <li><a href="./contest-lobby.html">Thi đấu</a></li>
+              <li><a href="#our-classes">Bộ gõ tự do</a></li>
+              <li><a href="./profile.html">Kết quả học tập</a></li>
+              <li>
+                  <button id="hgtk_dictionary" data-toggle="dropdown" type="submit">Từ điển▾</button>
+                  <div class="dropdown-menu dictionary" hidden="">
+                      <div>
+                          <input type="text" name="key" class="input-dictionary" autocomplete="off" placeholder="Nhập từ cần tra cứu" id="dictionary">
+                          <i class="fas fa-search" style="color: #fff;margin-left: 10px"></i>
+                          <div class="result-search" id="result-search"></div>
+                          <div data-keyboard="steno-keyboard-dictionary.html"></div>
+                      </div>
+                  </div>
+              </li> 
+              <li class="main-button">
+                  <div class="dropdown-toggle last item-menu btn1" data-toggle="dropdown" id="dropdownMenu1">
+                      <i class="fas fa-user"></i> Xin chào, <b>Người dùng 1▾</b>
+                      <div class="dropdown-menu account" aria-labelledby="dropdownMenu1" hidden="">
+                          <div><img src="./resources/assets/images/avatar.jpg" class="avatar" alt=""></div>
+                          <div class="dropdown-divider"></div>
+                          <div class="drop-item"><a href="./profile.html" class="item-drop">Thông tin tài khoản</a></div>
+                          <div class="drop-item"><a href="#" class="item-drop">Đăng xuất</a></div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <!-- ***** Menu End ***** -->
+      </div>
+    </header>
+    <div id="ifbe" class="row" style="margin-top: 80px;">
+      <div id="i99k" class="profile">
+        <img id="ixqj" src="resources/imgs/profile/avatar1.jpg"/>
+        <div id="il0g">Thân Minh Duy
+        </div>
+        <div id="irgp">duypro
+        </div>
+        <img src="resources/imgs/profile/stars.png"/>
+        <div id="ihlfr">Chuyên gia tốc ký
+        </div>
+        <div id="i6clqw">Tốc độ gõ : 125 wpm
+        </div>
+        <div id="iwxiwc">Độ chính xác: 80%
+        </div>
+        <div id="ixurxn">Trận đấu sắp diễn ra
+        </div>
+        <div id="i4vlml" class="challenge">
+          <div id="imbzkf" class="cell" onclick="location.href='./thidau-1.html'">
+            <div id="i3wf5i">Shakesphere Challenge
+            </div>
+            <div id="icszwf"><span id="i94z1k"><b>00:00:23</b></span></div>
+          </div>
+        </div>
+        <div class="challenge" id="isnhxa">
+          <div class="cell" id="isneb5" onclick="location.href='./thidau-1.html'">
+            <div id="i6ctju">Shakesphere Challenge
+            </div>
+            <div id="imahvk"><span id="i6mx3v"><b>00:00:23</b></span></div>
+          </div>
+        </div>
+        <div id="i9v8s" class="challenge" onclick="location.href='./thidau-1.html'">
+          <div id="i9f03" class="cell">
+            <div id="igjsf">Shakesphere Challenge
+            </div>
+            <div id="infah"><span id="ij689"><b>00:00:23</b></span></div>
+          </div>
+        </div>
+        <div id="i70gve"><b>Xem tất cả (12)</b></div>
+      </div>
+      <div id="iu0j" class="cell">
+        <div id="inb6i" class="row">
+          <div id="i79xi" class="cell">
+            <div id="igwdr">
+            	<b>Thi đấu</b>
+            	<p class="read-text">Thi đấu với bạn bè là phương pháp hiệu quả để bạn rèn luyện khả năng gõ tốc ký của mình</p>
+            </div>
+            <div id="i8brv" class="row">
+              <div class="row" id="i82pb7">
+                <div class="cell" id="ic19hu">
+                  <div id="idugeh"><b>Tạo trận đấu
+                    </b>
+                  </div>
+                  <div class="row" id="itmagf">
+                    <div class="cell" id="ih96vo">
+                      <div id="i72vth"><b>Tiêu đề
+                        </b>
+                      </div>
+                      <input type="text" placeholder="Nhập tiêu đề trận đấu">
+                      <div id="i0ltew"><b>Số người tham gia
+                        </b>
+                      </div>
+                      <input type="number" placeholder="Nhập số lượng">
+                      <div id="iolws9"><b id="ifw6tl">Thời gian bắt đầu
+                        </b>
+                      </div>
+                      <input type="time" placeholder="Nhập thời điểm">
+                      <div id="i6ux5z"><b>Đề bài
+                        </b>
+                      </div>
+                      <textarea type="text" placeholder="Nhập đoạn văn mẫu"></textarea>
+                      <div class="row">
+                        <div class="cell" id="izoov6">
+                          <button class="itzg18"><b id="irdw0r">Tạo ngẫu nhiên
+                          </b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell" id="ilocn2">
+                      <div id="izkztx"><b>Phạm vi trận đấu
+                        </b>
+                      </div>
+                      <div class="row" id="ix53ve">
+                        <div class="cell" id="icf8my">
+                          <img src="resources/imgs/profile/icon-private.png"/>
+                          <div id="ir02zh"><i><b>Riêng tư
+                            </b></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="ix53ve">
+                        <div class="cell" id="i2165i">
+                          <img src="resources/imgs/profile/icon-public.png" id="iu032q"/>
+                          <div id="iu3m8o"><i><b>Công khai
+                            </b></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="inz0gk">
+                        <b id="ie5gov">Trình độ:   </b>
+                        <div id="difficulty"><b id="difficulty_text">Khó</b></div>
+                      </div>
+                      <div class="row" id="i2visd">
+                        <div class="slidecontainer">
+                          <input type="range" min="1" max="5" value="4" class="slider" id="difficulty_slider">
+                        </div>
+                        <script type="text/javascript">
+                          var slider = document.getElementById("difficulty_slider");
+                          var output = document.getElementById("difficulty_text");
+                          slider.oninput = function() {
+                            var number = parseInt(this.value);
+                            switch(number) {
+                              case 1:
+                                output.innerHTML = "Rất dễ";
+                                output.style.color = "#33cc33";
+                                break;
+                              case 2:
+                                output.innerHTML = "Dễ";
+                                output.style.color = "#0099ff";
+                                break;
+                              case 3:
+                                output.innerHTML = "Bình thường";
+                                output.style.color = "#ff6600";
+                                break;
+                              case 4:
+                                output.innerHTML = "Khó";
+                                output.style.color = "#ff0000";
+                                break;
+                              case 5:
+                                output.innerHTML = "Rất khó";
+                                output.style.color = "#9900cc";
+                                break;
+                            }
+                          }
+                        </script>
+                      </div>
+                      <div id="i8s3i9"><b id="iak51k">Thời lượng thi đấu</b></div>
+                      <div id="iugmci"><b id="i94uqz"><span id="i7bd47">____</span></b><b id="ip8try"><span id="ixmeul">  giờ  </span></b><b id="iq6j1l"><span id="idbwk3">____</span></b><b id="iofk5k"><span id="iflwwc">  phút</span></b></div>
+                      <div id="iy7i46"><b id="ivmgj5">Cho phép sửa gõ sai ?</b></div>
+                      <div id="idk2zb">
+                        <button class="ismy44">Có</button>
+                        <button class="ifhtxn">Không</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="irv1mi"><b>&gt;&gt; Tạo trận đấu &lt;&lt;</b>
+                </div>
+                </button>
+              </div>
+              <div class="row" id="iwd9xb">
+                <div class="cell" id="i5n5de">
+                  <div id="i2aa2o"><b>Danh sách đã tạo</b></div>
+                  <div class="row" id="ixd8j9">
+                    <div class="cell" id="i931cv"><img id="i1q2pj" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAcCAIAAADjpnhwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADkSURBVDhPY/hPFiBN2+SJEyAMYrX9+/evvbXV0swUwiVK28+fP2urq4B6SND27du37MwMiB5itX369CkpIR6uhyht796+jY6MQNZDWNvjR49CggLR9AARRBa7tju3b3u5u6FpgCCIAizarl654urkiKYajiBq0LWdOX3a0c4WTSkygihD0bZr5047ays0dWgIohKhbcP69WgqsCKIYqi2pYsXo0njQhD1lGkDAnIcCQHkBAkEkBMBEEBOdEMAOYkLAshJyhBATsaBAHKyKQSQUyhAADlFEASQU+DBAcnFKwr4/x8AhXo2zdg2p3IAAAAASUVORK5CYII="/></div>
+                    <div class="cell" id="izs521">
+                      <div id="i7g0j" class="challenge">
+                        <div id="iyt1c" class="cell">
+                          <div id="ivrsw">chưa có tiêu đề</div>
+                          <div id="iiz67"><span id="igyas"><b>đang chỉnh sửa</b></span></div>
+                        </div>
+                      </div>
+                      <div class="challenge" id="ipi9g9">
+                        <div class="cell" id="iirynl">
+                          <div id="i5a0hw">Shakesphere Challenge</div>
+                          <div id="ioow7h"><span id="imer8k"><b>00:00:23</b></span></div>
+                        </div>
+                      </div>
+                      <div class="challenge" id="iuwjge">
+                        <div class="cell" id="izlxrg">
+                          <div id="ikj1t2">Shakesphere Challenge</div>
+                          <div id="i2o1ee"><span id="iq1t3z"><b>00:00:23</b></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="ikwblk">
+          <div class="cell" id="ibwe4h">
+            <div class="row" id="ic9f3n">
+              <div class="cell" id="i08deh">
+                <div id="i7drg6"><b>Tham gia trận đấu</b></div>
+                <div id="ie4kxh"><b id="iljjx3"><span id="icibz3">Tìm trận đấu</span></b><b id="iro1pl"><span id="i1anvl">Đã tham gia</span></b><b id="ifuxs3"><span id="intqhg">Nhập mã</span></b></div>
+                <div id="i216ii">Có tất cả <b>1001</b> trận đấu sắp diễn ra</div>
+                <div class="row" id="iaomz4">
+                  <div class="cell" id="igdnvv">
+                    <div class="row" id="i32oae">
+                      <div class="cell" id="inurqj">
+                        <div id="ium6dt"><b>Tên trận đấu</b></div>
+                      </div>
+                      <div class="cell" id="iycwag">
+                        <div id="i2gxn1"><b>Thời gian</b></div>
+                      </div>
+                      <div class="cell" id="i13wsb">
+                        <div id="il74l1"><b>Thời lượng</b></div>
+                      </div>
+                      <div class="cell" id="icuyvn">
+                        <div id="iyn5db"><b>Độ khó</b></div>
+                      </div>
+                      <div class="cell" id="isvtz8">
+                        <div id="iv49bk"><b>Thí sinh</b></div>
+                      </div>
+                      <div class="cell" id="i7y50d"></div>
+                    </div>
+                    <div class="row" id="i0scwa">
+                      <div class="cell" id="i04pvw">
+                        <div id="i0hgv7">Văn học cổ điển</div>
+                      </div>
+                      <div class="cell" id="ingxcz">
+                        <div id="i66fzp">17:30 13/05/2020</div>
+                      </div>
+                      <div class="cell" id="im5a8o">
+                        <div id="i28z4f">30 phút</div>
+                      </div>
+                      <div class="cell" id="ir7btl">
+                        <div id="ih99n7"><span>Khó</span></div>
+                      </div>
+                      <div class="cell" id="inr59s">
+                        <div id="i2frve">123 / 453</div>
+                      </div>
+                      <div class="cell" id="ikmivh">
+                        <button class="contest_register"  onclick="location.href='./thidau-2.html'">Tham gia</button>
+                      </div>
+                    </div>
+                    <div class="row" id="ih4exg">
+                      <div class="cell" id="iwdefd">
+                        <div id="ivya1d">Shakesphere Challenge</div>
+                      </div>
+                      <div class="cell" id="ibvtxf">
+                        <div id="i3ze7n">17:30 13/05/2020</div>
+                      </div>
+                      <div class="cell" id="it824j">
+                        <div id="icrd1g">30 phút</div>
+                      </div>
+                      <div class="cell" id="iluf3c">
+                        <div id="imygis"><span>Khó</span></div>
+                      </div>
+                      <div class="cell" id="irrw5y">
+                        <div id="iv0r03">123 / 453</div>
+                      </div>
+                      <div class="cell" id="igcmnm">
+                        <button class="contest_register" onclick="location.href='./thidau-2.html'">Tham gia</button>
+                      </div>
+                    </div>
+                    <div id="imavzr">
+                      <b>Shakesphere Challenge</b>
+                      <div><span>Tạo bởi Vũ Quang Đại vào lúc 19:30 12/05/2019</span></div>
+                      <div>Cuộc thi bắt đầu sau 17 giờ 20 phút nữa</div>
+                      <div>Đề bài:</div>
+                      <div>   Ký ức thật ngộ ...</div>
+                    </div>
+                    <div id="ir97m3"><b>Xem thêm (13)</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="hgtk_footer">
+      <p>Copyright &copy; 2020 Steno</p>
+    </footer>
+  </body>
+  <html>
