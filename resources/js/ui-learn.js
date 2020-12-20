@@ -1,3 +1,11 @@
+window.addEventListener("load", (event)=>{
+	readJSONFile("resources/js/course-info.json",async function(text_json){
+		await loadLesson(text_json);
+		loadKeyboards();
+		setupEventListener();
+	});
+});
+
 function toggleSidebar() {
 	let sidebar = document.getElementById("learn_sidebar");
 	let isExpand = sidebar.classList.contains("learn-sidebar-expanded");
@@ -93,11 +101,23 @@ function setupEventListener(){
 	}
 }
 
+async function loadKeyboards(){
+	let listEl = document.querySelectorAll("*[data-keyboard]");
+	console.log("sdvweve");
+	console.log(listEl);
+	for (let i=0; i<listEl.length; i++){
+		let el = listEl[i];
+		let url = el.getAttribute("data-keyboard");
+		el.innerHTML = await fetchHtmlAsText(url);
+	}
+}
 
 
 /*
-// dynamic load page
+/	dynamic load page
 */
+
+// ultility functions
 
 function getSearchParameters() {
     var prmstr = window.location.search.substr(1);
@@ -134,6 +154,9 @@ async function fetchHtmlAsText(url) {
     return await (await fetch(url)).text();
 }
 
+
+// load lecture
+
 async function loadLesson(text_json){
 	let courseData = JSON.parse(text_json);
 	let params = getSearchParameters();
@@ -142,9 +165,12 @@ async function loadLesson(text_json){
 	if (!(section && lecture)){
 		section = lecture = 1;
 	}
-	
+	await loadLearnSidebar(courseData, section, lecture);
+	await loadLearnMainSection(courseData, section, lecture);
+}
 
-	// load sidebar
+
+async function loadLearnSidebar(courseData, section, lecture){
 	let listSectionEl = document.querySelector("#list_lectures");
 	listSectionEl.innerHTML = "";
 	for (let i=1; i<=courseData.sections.length; i++){
@@ -164,9 +190,9 @@ async function loadLesson(text_json){
 			listLectureEl.appendChild(lectureEl);
 		}
 	}
+}
 
-	// load main
-	
+async function loadLearnMainSection(courseData, section, lecture){
 	let sectionInfo = courseData.sections[section-1];
 	let lectureInfo = sectionInfo.lectures[lecture-1];
 
@@ -241,24 +267,4 @@ async function loadLesson(text_json){
 	if (currLecture.description && currLecture.description != "")
 		str += "<br>Nội dung bài học: "+currLecture.description;
 	currLectureInfoEl.innerHTML = str;
-
-
-
-	//
-
-	loadKeyboards();
-	setupEventListener();
 }
-
-async function loadKeyboards(){
-	let listEl = document.querySelectorAll("*[data-keyboard]");
-	for (let i=0; i<listEl.length; i++){
-		let el = listEl[i];
-		let url = el.getAttribute("data-keyboard");
-		el.innerHTML = await fetchHtmlAsText(url);
-	}
-}
-
-window.addEventListener("load", (event)=>{
-	readJSONFile("resources/js/course-info.json",loadLesson);
-});

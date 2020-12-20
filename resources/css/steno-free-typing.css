@@ -1,0 +1,139 @@
+#StenoFreeTyping{
+	margin-top: 60px;
+	/*padding-top: 60px;*/
+	display: flex;
+	height: 90vh;
+	background-color: var(--color-background);
+}
+#LeftSide, #RightSide{
+	flex-basis: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#LeftSide .hgtk-button{
+	margin: 10px;
+}
+
+#RightSide .hgtk-button{
+	margin: 10px;
+}
+
+#RightSide .log-title{
+	margin: 30px 10px 10px 10px;
+}
+
+#TypingLog{
+	padding: 0px;
+	margin: 0px 10px;
+	font-size: 0.8em;
+	color: var(--color-on-background-shade);
+	max-height: 70vh;
+	overflow: hidden;
+}
+
+#StenoFreeTyping>main{
+	flex-basis: 80%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-surface);
+	border: 1px solid var(--color-primary-tint);
+	color: var(--color-on-surface);
+	justify-content: space-between;
+}
+
+#StenoFreeTyping > main > div:first-child{
+	margin: 20px;
+	flex-grow: 5;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+#StenoFreeTyping > main > div:first-child > h1{
+	font-size: 1.2em;
+}
+#StenoFreeTyping > main > div:first-child textarea{
+	resize: none;
+	font-size: 1.2em;
+	padding: 10px;
+	flex-grow: 1;
+}
+#StenoFreeTyping > main > div:last-child{
+	flex-grow: 1;
+	margin: 0px 20px;
+}
+
+.typing-assist{
+}
+
+.typing-assist >div:nth-child(1){
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0px;
+	height: 25vh;
+}
+.typing-assist >div:nth-child(1) > div:nth-child(1){
+	flex-basis: 50%;
+	max-height: 100%;
+}
+.typing-assist >div:nth-child(1) > div:nth-child(2){
+	flex-basis: 30%;
+	max-height: 100%;
+}
+.typing-assist >div:nth-child(2){
+	display: flex;
+	justify-content: flex-end;
+}
+.typing-assist >div:nth-child(2) > button{
+	padding: 10px 30px;
+}
+
+.practice-statistic{
+	/*border-right: 1px solid var(--color-primary-tint);*/
+	padding: 10px;
+	font-size: 1rem;
+	color: var(--color-on-background);
+}
+.practice-statistic > div{
+	padding: 30px 0px;
+	text-align: center;
+}
+.practice-statistic > div:not(:first-child){
+	border-top: 1px solid var(--color-primary-tint);
+}
+.practice-statistic > div > p:nth-child(1){
+	margin: 0px;
+	font-size: 0.85em;
+}
+.practice-statistic > div > p:nth-child(2){
+	margin: 0px;
+	margin-top: 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.hgtk-button{
+	padding: 5px 10px;
+	border: 1px solid var(--color-primary);
+	background-color: var(--color-surface);
+	border-radius: 5px;
+	transition: var(--transition-out);
+	color: var(--color-on-surface);
+}
+.hgtk-button-shade{
+	border: 1px solid var(--color-primary-tint);
+	transition: var(--transition-out);
+	color: var(--color-on-surface-shade);
+}
+.hgtk-button:hover{
+	cursor: pointer;
+	background-color: var(--color-primary-tint);
+	transition: var(--transition-in);
+	color: var(--color-on-surface);
+}
+.hgtk-button:focus {
+	outline: none;
+	box-shadow: none;
+}

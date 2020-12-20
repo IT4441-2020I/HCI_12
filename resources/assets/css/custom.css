@@ -741,9 +741,9 @@ banner
   transform: translate(-50%,-50%);
 }
 
-.main-banner .caption h6 {
+.main-banner .caption p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 300;
   color: #fff;
   letter-spacing: 0.5px;
@@ -884,7 +884,7 @@ timeline
   border-left: 2px dashed #E7E7E7;
 }
 .timeline-subtitle {
-  font-size: 15px
+  font-size: 0.6em
 }
 .timeline-title:before {
   text-align: center;
@@ -902,12 +902,12 @@ timeline
 }
 .timeline-title {
   counter-increment: item;
-  padding: 0px 10px 50px 50px;
+  padding: 0px 10px 20px 50px;
   margin-left: 2px;
   position: relative;
   background-color: var(--color-background);
   list-style: none;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .timeline-content:before {
   text-align: center;
@@ -932,7 +932,7 @@ timeline
   background-color: var(--color-surface);
   list-style: none;
   left: 60px;
-  top:28px;
+  /*top:28px;*/
   border: 1px solid #000;
   border-radius: 10px;
   display: flex;
@@ -949,12 +949,12 @@ timeline
   color: black;
 }
 .content-title {
-  font-size: 20px;
+  font-size: 0.75em;
   display: flex;
   flex-direction: row;
 }
 .content-subtitle {
-  font-size: 15px;
+  font-size: 0.6em;
 }
 .complete:before {
   background-color: var(--color-success);
@@ -1001,24 +1001,33 @@ timeline
   left:-31px; 
 }
 .timeline-content-more {
-  padding: 10px 20px 10px 20px;
-  width: 100px;
+  padding: 10px 20px;
+  width: fit-content;
   margin-top: 10px;
-  margin-left: -59px;
-  position: relative;
-  background-color: white;
+  display: block;
+  /*margin-left: -59px;
+  position: relative;*/
+  background-color: var(--color-surface);
   list-style: none;
-  font-size: 12px;
+  font-size: 0.6em;
   left: 60px;
   top:28px;
-  border: 1px solid #000;
+  border: 1px solid var(--color-primary);
   border-radius: 5px;
-  color: #000
+  color: var(--color-on-surface);
+  transition: var(--transition-out);
 }
 
+.timeline-content-more:hover{
+  background-color: var(--color-primary-tint);
+  cursor: pointer;
+  transition: var(--transition-in);
+  color: var(--color-on-surface);
+}
 
-
-
+.timeline-title .collapse{
+  margin-bottom: 20px;
+}
 
 
 /* 

@@ -5,15 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bài học</title>
 
-	<link rel="stylesheet" type="text/css" href="resources/css/learn-general-with-header.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/keyboard.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/simple-header-footer.css">
-	<script type="text/javascript" src="resources/js/ui-learn.js"></script>
+
 	<script type="text/javascript" src="resources/js/load-keyboard.js"></script>
+	<script type="text/javascript" src="resources/js/toggle.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="resources/css/steno-free-typing.css">
 
 	<link rel="stylesheet" type="text/css" href="resources/css/font-def.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/general.css">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 <body>
@@ -58,42 +60,63 @@
     	</div>
     </header>
     <!-- ***** Header Area End ***** -->
-	<aside id="learn_sidebar" class="learn-sidebar-collapsed" onmouseenter="setSidebarExpand(true)" onmouseleave="setSidebarExpand(false)">
-		<div>
-			<p>Lộ trình</p>
-			<img src="resources/imgs/left-arrow-angle-big-gross-symbol.svg" onclick="toggleSidebar()">
-		</div>
-		<div>
+    <div id="StenoFreeTyping">
+    	<aside id="LeftSide">
+    		<div>
+    			<div id="TypingStatistic" class="practice-statistic">
+    				<div>
+						<p>Tốc độ</p>
+						<p>12 wpm</p>
+					</div>
+					<div>
+						<p>Độ chính xác</p>
+						<p>96%</p>
+					</div>
+					<div>
+						<p>Số lần đã gõ</p>
+						<p>2759</p>
+					</div>
+					<div>
+						<p>Số lần gõ đúng</p>
+						<p>12</p>
+					</div>
+    			</div>
+    		</div>
+			<button class="hgtk-button" onclick="toggleHidden('#TypingStatistic'); toggleClass('#LeftSide button','hgtk-button-shade'); switchText('#LeftSide button',['Thống kê: Bật','Thống kê: Tắt']);">Thống kê: Bật</button>
+		</aside>
+		<main>
 			<div>
-				<img src="resources/imgs/roadpath.png">
+				<h1>Soạn thảo với tốc ký</h1>
+				<textarea>Gõ đoạn văn ở đây</textarea>
 			</div>
-			<ol id="list_lectures">
-			</ol>
-		</div>
-	</aside>
-	<main>
-		<div id="learn_main_title">
-			<p>1. Làm quen bàn phím tốc ký</p>
-			<h1>1.2. Bàn phím tốc ký</h1>
-		</div>
-		<div id="list_panels"></div>
-		<div id="bottom_buttons">
+			<div class="typing-assist">
+				<div id="keyboards">
+					<div data-keyboard="standard-keyboard.html"></div>
+					<div data-keyboard="steno-keyboard.html"></div>
+				</div>
+				<div>
+					<button class="hgtk-button" onclick="toggleHidden('#keyboards'); toggleClass('main button','hgtk-button-shade'); switchText('main button',['Bàn phím hỗ trợ: Bật','Bàn phím hỗ trợ: Tắt']);">Bàn phím hỗ trợ: Bật</button>
+				</div>
+			</div>
+		</main>
+		<aside id="RightSide">
 			<div>
-				<a class="learn-button">Bài trước</a>
-				<p class="read-text"></p>
-			</div>
-			<div>
-				<a class="learn-button">Làm lại bài thi</a>
-				<p class="read-text"></p>
-			</div>
-			<div>
-				<a class="learn-button">Bài kế tiếp</a>
-				<p class="read-text"></p>
-			</div>
-		</div>
-	</main>
+				<p class="log-title">Bạn đã gõ:</p>
+    			<p id="TypingLog">
+    				HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>HGTN</br>ENV</br>
+    			</p>
+    		</div>
+			<button class="hgtk-button" onclick="toggleHidden('#TypingLog'); toggleHidden('#RightSide .log-title'); toggleClass('#RightSide button','hgtk-button-shade'); switchText('#RightSide button',['Lịch sử gõ: Bật','Lịch sử gõ: Tắt']);">Lịch sử gõ: Bật</button>
+		</aside>
+    </div>
 	<footer id="hgtk_footer">
 		<p>Copyright &copy; 2020 Steno</p>
 	</footer>
+
+	<script type="text/javascript">
+		window.addEventListener("load", (event)=>{
+			loadKeyboards();
+		})
+	</script>
 </body>
-</html>
+</html>	

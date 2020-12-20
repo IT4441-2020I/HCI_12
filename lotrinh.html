@@ -1,557 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Học gõ</title>
-<!--
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Học gõ</title>
+	<!--
 
 
 -->
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="resources/assets/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="resources/assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="resources/assets/css/keyboard-dictionary.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<!-- Additional CSS Files -->
+	<link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/assets/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="resources/assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="resources/assets/css/keyboard-dictionary.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/font-def.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/general.css">
+</head>
 
-    <link rel="stylesheet" type="text/css" href="resources/css/font-def.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/general.css">
+<body>
+	<!-- ***** Preloader Start ***** -->
+	<!-- ***** Preloader End ***** -->
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area header-sticky">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="index.html" class="logo">
+							<i class="fas fa-keyboard logo" style="color: white"></i>
+							HGTK
+						</a>
+						<!-- ***** Logo End ***** -->
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav">
+							<li class="scroll-to-section"><a class="item-menu" href="./lotrinh.html">Học gõ</a></li>
+							<li class="scroll-to-section"><a class="item-menu" href="./contest-lobby.html">Thi đấu</a></li>
+							<li class="scroll-to-section"><a class="item-menu" href="./bo-go-tu-do.html">Bộ gõ tự do</a></li>
+							<li class="scroll-to-section"><a class="item-menu" href="./profile.html">Kết quả học tập</a></li>
+							<li class="scroll-to-section">
+								<button class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" type="submit">
+									Từ điển
+								</button>
+								<div class="dropdown-menu dictionary">
+									<div>
+										<input type="text" name="key" class="input-dictionary" autocomplete="off" placeholder="Nhập từ cần tra cứu" id="dictionary">
+										<i class="fas fa-search" style="color: #fff;margin-left: 10px"></i>
+										<div class="result-search" id="result-search"></div>
+										<div data-keyboard="steno-keyboard-dictionary.html"></div>
+									</div>
+								</div>
+							</li>
+							<li class="main-button">
+								<div class="dropdown-toggle last item-menu btn1" data-toggle="dropdown" id="dropdownMenu1">
+									<i class="fas fa-user"></i> Xin chào, <b>Người dùng 1</b>
+									<div class="dropdown-menu account" aria-labelledby="dropdownMenu1">
+										<div><img src="./resources/assets/images/avatar.jpg" class="avatar" alt=""></div>
+										<div class="dropdown-divider"></div>
+										<div class="drop-item"><a href="./profile.html" class="item-drop">Thông tin tài khoản</a></div>
+										<div class="drop-item"><a href="#" class="item-drop">Đăng xuất</a></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a class='menu-trigger'>
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
+	<!-- ***** Main Banner Area Start ***** -->
+	<div class="main-banner" id="top">
+		<img src="./resources/assets/images/banner.jpg" id="bg-video" alt="" />
+		<div class="video-overlay header-text">
+			<div class="caption">
+				<h2>Khóa học gõ tốc ký</h2>
+				<p class="">Chương trình học gõ tốc ký được thiết kế dễ dàng và thân thiện.<br>
+				Chúng tôi mong muốn giúp bạn rèn luyện được kỹ năng gõ tốc ký một cách thành thục và chuẩn xác.<br>
+				Giúp bạn nâng cao hiệu suât công việc tới 160%</p>
+				<div class="row button1">
+					<div class="main-button col dropdown">
+						<a class="btn1" href="#learning_path_intro">Lộ trình học</a>
+						<div class="dropdown-content">
+							<div class="comment_bubble1">
+								<div style="font-style: italic;" class="text-caption">Xem lộ trình học</div>
+								<div class="text-caption">Bạn có thể tùy chọn bài học muốn học</div>
+								<div style="font-weight: bold;" class="text-caption">Lộ trình học bao gồm:</div>
+								<div class="text-caption">- Các bài học: Hướng dẫn gõ và thực hành trực tiếp. Giúp bạn làm quen và ghi nhớ các quy tắc gõ phím. </div>
+								<div class="text-caption">- Các bài kiểm tra: Thử thách bạn qua các bài thi. Giúp bạn ôn tập và rèn luyện kỹ năng </div>
+							</div>
+						</div>
+					</div>
+					<div class="main-button col dropdown">
+						<a class="btn1" href="./learn-dynamic.html?section=6&lecture=2">Bắt đầu bài học</a>
+						<div class="dropdown-content">
+							<div class="comment_bubble2">
+								<div style="font-style: italic;" class="text-caption">Tiếp tục từ bài học trước của bạn</div>
+								<div class="text-caption">Bạn đã học xong bài: Gõ các từ thông dụng</div>
+								<div class="text-caption">Bài tiếp theo:<b> Gõ các từ khó, ít dùng</b></div>
+								<div class="text-caption"> <b>Nội dung bài học:</b> </div>
+								<div class="text-caption">Học cách gõ các văn bản chứa nhiều từ dài, hiếm gặp, các từ chuyên ngành... </div>
+							</div>
+						</div>
+					</div>
+					<div class="main-button col dropdown">
+						<a class="btn1" href="./learn-dynamic.html?section=3&lecture=2">Ôn tập</a>
+						<div class="dropdown-content">
+							<div class="comment_bubble3">
+								<div style="font-style: italic;" class="text-caption">Ôn tập lại các bài đã học, hoàn thành bài còn thiếu</div>
+								<div class="text-caption">Bạn còn <b>2</b> bài chưa hoàn thành</div>
+								<div class="text-caption">Đề xuất học bài <b>Âm chính :e, ê, o, ô</b></div>
+								<div class="text-caption"> <b>Nội dung bài học:</b> </div>
+								<div class="text-caption">Học cách gõ các âm e, ê, o, ô</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ***** Main Banner Area End ***** -->
+	<!-- ***** intro Start ***** -->
+	<section class="section" id="learning_path_intro">
+		<div class="container intro">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="intro-sp-title">Lộ trình học</div>
+					<div class="intro-title">Khóa học gõ tốc ký</div>
+					<div class="read-text" style="font-size: 1.2em">Chương trình học gõ tốc ký được thiết kế dễ dàng, thân thiện. Chúng tôi mong muốn giúp bạn rèn luyện được kỹ năng gõ tốc ký một cách thành thục và chuẩn xác. Giúp bạn nâng cao hiệu suất công việc lên tới 160%.<br /> Sau khóa học, bạn sẽ:</div>
+					<div class="row read-text" style="padding: 10px 0px; font-size: 1.2em">
+						<div class="col-md-4"><b>Học </b> phương pháp và quy tắc gõ tốc ký tiếng việt</div>
+						<div class="col-md-4"><b>Thực hành</b> thành thạo phương pháp gõ tốc ký</div>
+						<div class="col-md-4"><b>Ứng dụng </b> tốc ký vào soạn thảo các loại văn bản đa dạn</div>
+					</div>
+				</div>
+				<div class="col-lg-4 infor-subject">
+					<div class="intro-title-2">Thông tin khóa học</div>
+					<div>
+						<div class="row item-intro">
+							<div><i class="far fa-clock" style="color: black"></i></div>
+							<div>&ensp; <b>10 giờ 50 phút </b> để hoàn thành </div>
+						</div>
+					</div>
+					<div>
+						<div class="row item-intro">
+							<div><i class="fas fa-file-alt" style="color: black"></i></div>
+							<div>&ensp;&ensp; <b>23 </b> Bài học </div>
+						</div>
+					</div>
+					<div>
+						<div class="row item-intro">
+							<div><i class="fas fa-user-friends" style="color: black"></i></div>
+							<div>&ensp; <b>1532 </b> người tham gia khóa học </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Features Item End ***** -->
+	<section class="section timeline-section">
+		<div class="container timeline" id="steno_learning_path">
+			<div class="timeline-title complete">
+				<b>Làm quen với bàn phím tốc ký</b> &middot; 5 bài học &middot; 1 giờ 10 phút
+				<div class="timeline-subtitle">
+					<i>Mục tiêu</i> : Giúp bạn làm quen với phương pháp gõ tốc ký bằng luyện tập gõ bàn phím
+				</div>
+				<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1" id="collapse1">
+					Thu gọn
+				</a>
+				<div class="collapse show" id="collapseExample1">
+					<div class="timeline-content complete">
+						<div>
+							<div class="content-title">
+								<b>1.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
+							</div>
+							<div class="content-subtitle">
+								Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-undo-alt"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content complete">
+						<div>
+							<div class="content-title">
+								<b>1.2.Bàn phím tốc ký &middot;</b> 20 phút
+							</div>
+							<div class="content-subtitle">
+								Vị trí các phím, cách đặt tay trên bàn phím tốc ký
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-undo-alt"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content complete">
+						<div>
+							<div class="content-title">
+								<b>1.3.Gõ tốc ký cơ bản &middot;</b> 15 phút
+							</div>
+							<div class="content-subtitle">
+								Luyện gõ theo phương pháp tốc ký bằng cách gõ nhiều phím
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-undo-alt"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content complete">
+						<div>
+							<div class="content-title">
+								<b>1.4.Kiểm tra &middot;</b> 15 phút &middot;&ensp;<div style="color: green; font-size: 20px"> hoàn thành</div>
+							</div>
+							<div class="content-subtitle">
+								Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-undo-alt"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content complete">
+						<div>
+							<div class="content-title">
+								<b>1.5.Giới thiệu bộ quy tắc gõ tốc ký &middot;</b> 10 phút
+							</div>
+							<div class="content-subtitle">
+								Cho bạn cái nhìn tổng quan về số lượng và nội dung các quy tắc gõ tốc ký
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-undo-alt"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content">
+						<div>
+							<div class="content-title">
+								<b>1.*.Luyện tập</b>
+							</div>
+							<div class="content-subtitle">
+								Tổng hợp các bài luyện tập để bạn làm quên với tốc ký
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-dumbbell"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-title complete">
+				<b>Học gõ âm đầu</b> &middot; 8 bài học &middot; 2 giờ 55 phút
+				<div class="timeline-subtitle">
+					<i>Mục tiêu</i> : Luyện gõ các âm đầu trong hệ thống từ tiếng Việt <br> Các âm đầu bao gồm : B, C, D, Ch, Ph,...
+				</div>
+				<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" id="collapse2">Thu gọn</a>
+				<div class="collapse show" id="collapseExample2">
+					<div class="timeline-content complete">
+						<div>
+							<div class="content-title">
+								<b>2.1.Luyện gõ âm :s, t, c, k, h, r,b &middot;</b> 15 phút
+							</div>
+							<div class="content-subtitle">
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-undo-alt"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content failue">
+						<div>
+							<div class="content-title">
+								<b>2.2.Luyện gõ âm:th, kh, ph,tr &middot;</b> 15 phút &middot;&ensp;<div style="color: red; font-size: 20px"> chưa đạt </div>
+							</div>
+							<div class="content-subtitle">
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-undo-alt"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content">
+						<div>
+							<div class="content-title">
+								<b>2.3.Kiểm tra &middot;</b> 10 phút
+							</div>
+							<div class="content-subtitle">
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-title">
+				<b>Học gõ âm chính</b> &middot; 5 bài học &middot; 1 giờ 50 phút
+				<div class="timeline-subtitle">
+					<i>Mục tiêu</i> : Luyện gõ các âm cuối trong hệ thống từ tiếng VIệt <br>
+					Các âm cuối bao gồm : B,C,D, Ch,Ph,...
+				</div>
+				<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" id="collapse3">
+					Xem các bài học
+				</a>
+				<div class="collapse" id="collapseExample3">
+					<div class="timeline-content ">
+						<div>
+							<div class="content-title">
+								<b>3.1.Phương pháp tốc ký &middot;</b> 10 phút
+							</div>
+							<div class="content-subtitle">
+								Phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content ">
+						<div>
+							<div class="content-title">
+								<b>3.2.Bàn phím tốc ký &middot;</b> 20 phút
+							</div>
+							<div class="content-subtitle">
+								Vị trí các phím, cách đặt tay trên bàn phím tốc ký
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-title ">
+				<b>Học gõ chữ số</b> &middot; 5 bài học &middot; 1 giờ 50 phút
+				<div class="timeline-subtitle">
+					<i>Mục tiêu</i> :Học cách gõ các chữ số <br>
+					Bao gồm các số từ 0-9, các số âm
+				</div>
+				<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="true" aria-controls="collapseExample4" id="collapse4">
+					Xem các bài học
+				</a>
+				<div class="collapse" id="collapseExample4">
+					<div class="timeline-content ">
+						<div>
+							<div class="content-title">
+								<b>4.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
+							</div>
+							<div class="content-subtitle">
+								Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content ">
+						<div>
+							<div class="content-title">
+								<b>4.2.Bàn phím tốc ký &middot;</b> 20 phút
+							</div>
+							<div class="content-subtitle">
+								Vị trí các phím, cách đặt tay trên bàn phím tốc ký
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-title ">
+				<b>Học gõ âm cuối</b> &middot; 5 bài học &middot; 1 giờ 50 phút
+				<div class="timeline-subtitle">
+					<i>Mục tiêu</i> : Luyện gõ các âm cuối trong hệ thống từ tiếng VIệt <br>
+					Các âm cuối bao gồm : B,C,D, Ch,Ph,...
+				</div>
+				<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5" id="collapse5">
+					Xem các bài học
+				</a>
+				<div class="collapse" id="collapseExample5">
+					<div class="timeline-content ">
+						<div>
+							<div class="content-title">
+								<b>5.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
+							</div>
+							<div class="content-subtitle">
+								Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content ">
+						<div>
+							<div class="content-title">
+								<b>5.2.Bàn phím tốc ký &middot;</b> 20 phút
+							</div>
+							<div class="content-subtitle">
+								Vị trí các phím, cách đặt tay trên bàn phím tốc ký
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-title ">
+				<b>Kỹ năng gõ tổng hợp</b> &middot; 5 bài học &middot; 1 giờ 50 phút
+				<div class="timeline-subtitle">
+					<i>Mục tiêu</i> : Luyện gõ với các câu văn, đoạn văn dài
+				</div>
+				<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6" id="collapse6">
+					Xem các bài học
+				</a>
+				<div class="collapse" id="collapseExample6">
+					<div class="timeline-content complete">
+						<div>
+							<div class="content-title">
+								<b>6.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
+							</div>
+							<div class="content-subtitle">
+								Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+					<div class="timeline-content failue">
+						<div>
+							<div class="content-title">
+								<b>6.2.Bàn phím tốc ký &middot;</b> 20 phút
+							</div>
+							<div class="content-subtitle">
+								Vị trí các phím, cách đặt tay trên bàn phím tốc ký
+							</div>
+						</div>
+						<div class="icon-content">
+							<a style="color: black;" href="#">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-end">
+				<b>Kết thúc khóa học</b>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Call to Action Start ***** -->
+	<section class="section" id="call-to-action">
+		<div class="container">
+		</div>
+	</section>
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; 2020 Steno</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="resources/js/load-learning-path.js"></script>
+	<!-- jQuery -->
+	<script src="resources/assets/js/jquery-2.1.0.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="resources/assets/js/popper.js"></script>
+	<script src="resources/assets/js/bootstrap.min.js"></script>
+	<!-- Plugins -->
+	<script src="resources/assets/js/scrollreveal.min.js"></script>
+	<script src="resources/assets/js/waypoints.min.js"></script>
+	<script src="resources/assets/js/jquery.counterup.min.js"></script>
+	<script src="resources/assets/js/imgfix.min.js"></script>
+	<script src="resources/assets/js/mixitup.js"></script>
+	<script src="resources/assets/js/accordions.js"></script>
+	<!-- Global Init -->
+	<script src="resources/assets/js/custom.js"></script>
+	<!-- steno -->
+	<script type="text/javascript" src="resources/assets/js/load-keyboard.js"></script>
+</body>
 
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-   
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                             <i class="fas fa-keyboard logo" style="color: white"></i>
-                             HGTK 
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a class="item-menu" href="./lotrinh.html">Học gõ</a></li>
-                            <li class="scroll-to-section"><a class="item-menu" href="./contest-lobby.html">Thi đấu</a></li>
-                            <li class="scroll-to-section"><a class="item-menu" href="#our-classes">Bộ gõ tự do</a></li>
-                            <li class="scroll-to-section"><a class="item-menu" href="./profile.html">Kết quả học tập</a></li>
-                            <li class="scroll-to-section">
-                                <button class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" type="submit">
-                                    Từ điển
-                                </button>
-                                <div class="dropdown-menu dictionary">
-                                    <div>
-                                        <input type="text" name="key" class="input-dictionary" autocomplete="off" placeholder="Nhập từ cần tra cứu" id="dictionary">
-                                        <i class="fas fa-search" style="color: #fff;margin-left: 10px"></i>
-                                        <div class="result-search" id="result-search"></div>
-                                        <div data-keyboard="steno-keyboard-dictionary.html"></div>
-                                    </div>
-                                </div>
-                            </li> 
-                            <li class="main-button">
-                                <div class="dropdown-toggle last item-menu btn1" data-toggle="dropdown" id="dropdownMenu1">
-                                    <i class="fas fa-user"></i> Xin chào, <b>Người dùng 1</b>
-                                    <div class="dropdown-menu account" aria-labelledby="dropdownMenu1">
-                                        <div><img src="./resources/assets/images/avatar.jpg" class="avatar" alt=""></div>
-                                        <div class="dropdown-divider"></div>
-                                        <div class="drop-item"><a href="./profile.html" class="item-drop">Thông tin tài khoản</a></div>
-                                        <div class="drop-item"><a href="#" class="item-drop">Đăng xuất</a></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner" id="top">
-        <img src="./resources/assets/images/banner.jpg" id="bg-video" alt="" />
-
-        <div class="video-overlay header-text">
-            <div class="caption">
-                <h2>Khóa học gõ tốc ký</h2>
-                <h6>Chương trình học gõ tốc ký được thiết kế dễ dàng và thân thiện.</h6>
-                <h6>Chúng tôi mong muốn giúp bạn rèn luyện được kỹ năng gõ tốc ký một cách thành thục và chuẩn xác.</h6>
-                <h6>Giúp bạn nâng cao hiệu suât công việc tới 160%</h6>
-                <div class="row button1">
-                    <div class="main-button col dropdown">
-                        <a class="btn1" href="#learning_path_intro">Lộ trình học</a>
-                        <div class="dropdown-content">
-                            <div class="comment_bubble1">
-                                <div style="font-style: italic;" class="text-caption">Xem lộ trình học</div>
-                                <div class="text-caption">Bạn có thể tùy chọn bài học muốn học</div>
-                                
-                                <div style="font-weight: bold;" class="text-caption">Lộ trình học bao gồm:</div>
-                                <div class="text-caption">- Các bài học: Hướng dẫn gõ và thực hành trực tiếp. Giúp bạn làm quen và ghi nhớ các quy tắc gõ phím. </div>
-                                <div class="text-caption">- Các bài kiểm tra: Thử thách bạn qua các bài thi. Giúp bạn ôn tập và rèn luyện kỹ năng </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-button col dropdown">
-                        <a class="btn1" href="./learn-dynamic.html?section=6&lecture=2">Bắt đầu bài học</a>
-                        <div class="dropdown-content">
-                            <div class="comment_bubble2">
-                                <div style="font-style: italic;" class="text-caption">Tiếp tục từ bài học trước của bạn</div>
-                                <div class="text-caption">Bạn đã học xong bài: Gõ các từ thông dụng</div>
-                                <div class="text-caption">Bài tiếp theo:<b> Gõ các từ khó, ít dùng</b></div>
-                                <div class="text-caption"> <b>Nội dung bài học:</b> </div>
-                                <div class="text-caption">Học cách gõ các văn bản chứa nhiều từ dài, hiếm gặp, các từ chuyên ngành... </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-button col dropdown">
-                        <a class="btn1" href="./learn-dynamic.html?section=3&lecture=2">Ôn tập</a>
-                        <div class="dropdown-content">
-                            <div class="comment_bubble3">
-                                <div style="font-style: italic;" class="text-caption">Ôn tập lại các bài đã học, hoàn thành bài còn thiếu</div>
-                                <div class="text-caption">Bạn còn <b>2</b> bài chưa hoàn thành</div>
-                                <div class="text-caption">Đề xuất học bài <b>Âm chính :e, ê, o, ô</b></div>
-                                <div class="text-caption"> <b>Nội dung bài học:</b> </div>
-                                <div class="text-caption">Học cách gõ các âm e, ê, o, ô</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>     
-        </div>
-    </div>
-    <!-- ***** Main Banner Area End ***** -->
-
-    <!-- ***** intro Start ***** -->
-    <section class="section" id="learning_path_intro">
-        <div class="container intro">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="intro-sp-title">Lộ trình học</div>
-                    <div class="intro-title">Khóa học gõ tốc ký</div>
-                    <div class="read-text" style="font-size: 1.2em">Chương trình học gõ tốc ký được thiết kế dễ dàng, thân thiện. Chúng tôi mong muốn giúp bạn rèn luyện được kỹ năng gõ tốc ký một cách thành thục và chuẩn xác. Giúp bạn nâng cao hiệu suất công việc lên tới 160%.<br/> Sau khóa học, bạn sẽ:</div>
-                    <div class="row read-text" style="padding: 10px 0px; font-size: 1.2em">
-                        <div class="col-md-4"><b>Học </b> phương pháp và quy tắc gõ tốc ký tiếng việt</div>
-                        <div class="col-md-4"><b>Thực hành</b> thành thạo phương pháp gõ tốc ký</div>
-                        <div class="col-md-4"><b>Ứng dụng </b> tốc ký vào soạn thảo các loại văn bản đa dạn</div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-4 infor-subject">
-                     <div class="intro-title-2">Thông tin khóa học</div>
-                     <div>
-                         <div class="row item-intro">
-                             <div><i class="far fa-clock" style="color: black"></i></div>
-                             <div>&ensp; <b>10 giờ 50 phút </b> để hoàn thành </div>
-                         </div>
-                     </div>
-                      <div>
-                         <div class="row item-intro">
-                             <div><i class="fas fa-file-alt" style="color: black"></i></div>
-                             <div>&ensp;&ensp; <b>23 </b> Bài học </div>
-                         </div>
-                     </div>
-                      <div>
-                         <div class="row item-intro">
-                             <div><i class="fas fa-user-friends" style="color: black"></i></div>
-                             <div>&ensp; <b>1532 </b> người tham gia khóa học </div>
-                         </div>
-                     </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Item End ***** -->
-
-    <section class="section timeline-section">
-      <div class="container timeline" id="steno_learning_path">
-        <div class="timeline-title complete">
-         	  <b>Làm quen với bàn phím tốc ký</b> &middot; 5 bài học &middot; 1 giờ 10 phút 
-          	<div class="timeline-subtitle">
-         		   <i>Mục tiêu</i> : Giúp bạn làm quen với phương pháp gõ tốc ký bằng luyện tập gõ bàn phím
-          	</div>
-           	<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1" id="collapse1">
-			        Thu gọn
-			      </a>
-		      <div class="collapse show" id="collapseExample1">
-         		<div class="timeline-content complete">
-         			  <div>
-         					<div class="content-title">
-         						<b>1.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-undo-alt"></i>
-                  </a>
-         				</div>
-         		</div>
-         		<div class="timeline-content complete">
-         				 <div>
-           					<div class="content-title">
-           						<b>1.2.Bàn phím tốc ký &middot;</b> 20 phút
-           					</div>
-           					<div class="content-subtitle">
-           						Vị trí các phím, cách đặt tay trên bàn phím tốc ký
-           					</div>
-         				 </div>
-           				<div class="icon-content">
-           					<a style="color: black;" href="#">
-                      <i class="fas fa-undo-alt"></i>
-                    </a>
-           				</div>
-         		</div>
-            <div class="timeline-content complete">
-                <div>
-                  <div class="content-title">
-                    <b>1.3.Gõ tốc ký cơ bản &middot;</b> 15 phút
-                  </div>
-                  <div class="content-subtitle">
-                    Luyện gõ theo phương pháp tốc ký bằng cách gõ nhiều phím
-                  </div>
-                </div>
-                <div class="icon-content">
-                  <a style="color: black;" href="#">
-                    <i class="fas fa-undo-alt"></i>
-                  </a>
-                </div>
-            </div>
-            <div class="timeline-content complete">
-                <div>
-                  <div class="content-title">
-                    <b>1.4.Kiểm tra &middot;</b> 15 phút &middot;&ensp;<div style="color: green; font-size: 20px"> hoàn thành</div> 
-                  </div>
-                  <div class="content-subtitle">
-                    Kiểm tra phản xạ của bạn trong việc gõ theo yêu cầu
-                  </div>
-                </div>
-                <div class="icon-content">
-                  <a style="color: black;" href="#">
-                    <i class="fas fa-undo-alt"></i>
-                  </a>
-                </div>
-            </div>
-            <div class="timeline-content complete">
-                <div>
-                  <div class="content-title">
-                    <b>1.5.Giới thiệu bộ quy tắc gõ tốc ký &middot;</b> 10 phút
-                  </div>
-                  <div class="content-subtitle">
-                    Cho bạn cái nhìn tổng quan về số lượng và nội dung các quy tắc gõ tốc ký
-                  </div>
-                </div>
-                <div class="icon-content">
-                  <a style="color: black;" href="#">
-                    <i class="fas fa-undo-alt"></i>
-                  </a>
-                </div>
-            </div>
-            <div class="timeline-content">
-                <div>
-                  <div class="content-title">
-                    <b>1.*.Luyện tập</b>
-                  </div>
-                  <div class="content-subtitle">
-                    Tổng hợp các bài luyện tập để bạn làm quên với tốc ký
-                  </div>
-                </div>
-                <div class="icon-content">
-                  <a style="color: black;" href="#">
-                    <i class="fas fa-dumbbell"></i>
-                  </a>
-                </div>
-            </div>
-         	</div>	
-        </div>
-         <div class="timeline-title complete">
-         	<b>Học gõ âm đầu</b> &middot; 8 bài học &middot; 2 giờ 55 phút 
-         	<div class="timeline-subtitle">
-         		<i>Mục tiêu</i> : Luyện gõ các âm đầu trong hệ thống từ tiếng Việt <br> Các âm đầu bao gồm : B, C, D, Ch, Ph,... 
-         	</div>
-         	 <a class="timeline-content-more" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" id="collapse2">Thu gọn</a>
-		  <div class="collapse show" id="collapseExample2">
-         		<div class="timeline-content complete">
-         			<div>
-         					<div class="content-title">
-         						<b>2.1.Luyện gõ âm :s, t, c, k, h, r,b &middot;</b> 15 phút
-         					</div>
-         					<div class="content-subtitle">
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-undo-alt"></i>
-                  </a>
-         				</div>
-         		</div>
-         		<div class="timeline-content failue">
-         				<div>
-         					<div class="content-title">
-         						<b>2.2.Luyện gõ âm:th, kh, ph,tr &middot;</b> 15 phút &middot;&ensp;<div style="color: red; font-size: 20px"> chưa đạt </div> 
-         					</div>
-         					<div class="content-subtitle">
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-undo-alt"></i>
-                  </a>
-         				</div>
-         		</div>
-            <div class="timeline-content">
-              <div>
-                  <div class="content-title">
-                    <b>2.3.Kiểm tra &middot;</b> 10 phút
-                  </div>
-                  <div class="content-subtitle">
-                  </div>
-                </div>
-                <div class="icon-content">
-                  <a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-                </div>
-            </div>
-         		</div>	
-         </div>
-         <div class="timeline-title">
-         	<b>Học gõ âm chính</b> &middot; 5 bài học &middot; 1 giờ 50 phút 
-         	<div class="timeline-subtitle">
-         		<i>Mục tiêu</i> : Luyện gõ các âm cuối trong hệ thống từ tiếng VIệt <br>
-            Các âm cuối bao gồm : B,C,D, Ch,Ph,...
-         	</div>
-         	<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" id="collapse3">
-		    Xem các bài học
-		  </a>
-		  <div class="collapse" id="collapseExample3">
-         		<div class="timeline-content ">
-         			<div>
-         					<div class="content-title">
-         						<b>3.1.Phương pháp tốc ký &middot;</b> 10 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>
-         		<div class="timeline-content ">
-         				<div>
-         					<div class="content-title">
-         						<b>3.2.Bàn phím tốc ký &middot;</b> 20 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Vị trí các phím, cách đặt tay trên bàn phím tốc ký
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>	
-         	</div>
-         </div>
-         <div class="timeline-title ">
-         	<b>Học gõ chữ số</b> &middot; 5 bài học &middot; 1 giờ 50 phút 
-         	<div class="timeline-subtitle">
-         		<i>Mục tiêu</i> :Học cách gõ các chữ số <br>
-            Bao gồm các số từ 0-9, các số âm
-         	</div>
-         	<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="true" aria-controls="collapseExample4" id="collapse4">
-		    Xem các bài học
-		  </a>
-		  <div class="collapse" id="collapseExample4">
-         		<div class="timeline-content ">
-         			  <div>
-         					<div class="content-title">
-         						<b>4.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>
-         		<div class="timeline-content ">
-         				<div>
-         					<div class="content-title">
-         						<b>4.2.Bàn phím tốc ký &middot;</b> 20 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Vị trí các phím, cách đặt tay trên bàn phím tốc ký
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>
-       		</div>	
-         </div>
-         <div class="timeline-title ">
-         	<b>Học gõ âm cuối</b> &middot; 5 bài học &middot; 1 giờ 50 phút 
-         	<div class="timeline-subtitle">
-         		<i>Mục tiêu</i> :  Luyện gõ các âm cuối trong hệ thống từ tiếng VIệt <br>
-            Các âm cuối bao gồm : B,C,D, Ch,Ph,...
-         	</div>
-         	<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5" id="collapse5">
-		    Xem các bài học
-		  </a>
-		  <div class="collapse" id="collapseExample5">
-         		<div class="timeline-content ">
-         			<div>
-         					<div class="content-title">
-         						<b>5.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>
-         		<div class="timeline-content ">
-         				<div>
-         					<div class="content-title">
-         						<b>5.2.Bàn phím tốc ký &middot;</b> 20 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Vị trí các phím, cách đặt tay trên bàn phím tốc ký
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>
-         		</div>	
-         </div>
-         <div class="timeline-title ">
-         	<b>Kỹ năng gõ tổng hợp</b> &middot; 5 bài học &middot; 1 giờ 50 phút 
-         	<div class="timeline-subtitle">
-         		<i>Mục tiêu</i> : Luyện gõ với các câu văn, đoạn văn dài
-         	</div>
-         	<a class="timeline-content-more" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6" id="collapse6">
-  			    Xem các bài học
-  			  </a>
-		  <div class="collapse" id="collapseExample6">
-         		<div class="timeline-content complete">
-         			<div>
-         					<div class="content-title">
-         						<b>6.1.Lịch sử phương pháp tốc ký &middot;</b> 10 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Giới thiệu về phương pháp gõ tốc ký, ưu điểm so với cách gõ thông thường
-         					</div>
-         				</div>
-         				<div class="icon-content">
-                  <a style="color: black;" href="#">
-                   <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>
-         		<div class="timeline-content failue">
-         				<div>
-         					<div class="content-title">
-         						<b>6.2.Bàn phím tốc ký &middot;</b> 20 phút
-         					</div>
-         					<div class="content-subtitle">
-         						Vị trí các phím, cách đặt tay trên bàn phím tốc ký
-         					</div>
-         				</div>
-         				<div class="icon-content">
-         					<a style="color: black;" href="#">
-                    <i class="fas fa-play"></i>
-                  </a>
-         				</div>
-         		</div>	
-         </div>
-         </div>
-      <div class="timeline-end">
-          <b>Kết thúc khóa học</b>
-      </div>
-
-      </div>
-    </section>
-
-
-
-    <!-- ***** Call to Action Start ***** -->
-    <section class="section" id="call-to-action">
-        <div class="container">
-       
-        </div>
-    </section>
-    
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; 2020 Steno</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="resources/js/load-learning-path.js"></script>
-
-    <!-- jQuery -->
-    <script src="resources/assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="resources/assets/js/popper.js"></script>
-    <script src="resources/assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="resources/assets/js/scrollreveal.min.js"></script>
-    <script src="resources/assets/js/waypoints.min.js"></script>
-    <script src="resources/assets/js/jquery.counterup.min.js"></script>
-    <script src="resources/assets/js/imgfix.min.js"></script> 
-    <script src="resources/assets/js/mixitup.js"></script> 
-    <script src="resources/assets/js/accordions.js"></script>
-    
-    <!-- Global Init -->
-    <script src="resources/assets/js/custom.js"></script>
-     <!-- steno -->
-    <script type="text/javascript" src="resources/assets/js/load-keyboard.js"></script>
-
-
-  </body>
 </html>
