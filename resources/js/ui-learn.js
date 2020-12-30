@@ -66,16 +66,16 @@ function setupEventListener(){
 		changeTab(el,0);
 	}
 
-	let typingAssistEls = document.querySelectorAll(".typing-assist");
-	for (let i=0; i<typingAssistEls.length; i++){
-		let el = typingAssistEls[i];
-		let toggleButton = el.querySelector(":scope >div:nth-child(3) > button");
-		if (toggleButton){
-			toggleButton.onclick = (event)=>{
-				toggleHandAssist(el);
-			};
-		}
-	}
+	// let typingAssistEls = document.querySelectorAll(".typing-assist");
+	// for (let i=0; i<typingAssistEls.length; i++){
+	// 	let el = typingAssistEls[i];
+	// 	let toggleButton = el.querySelector(":scope >div:nth-child(3) > button");
+	// 	if (toggleButton){
+	// 		toggleButton.onclick = (event)=>{
+	// 			toggleHandAssist(el);
+	// 		};
+	// 	}
+	// }
 
 	let learnTypeSpeelEls = document.querySelectorAll(".learn-practice-spell, .learn-practice-word, .learn-practice-sentence, .learn-practice-paragraph");
 	for (let i=0; i<learnTypeSpeelEls.length; i++){
@@ -203,17 +203,29 @@ async function loadLearnMainSection(courseData, section, lecture){
 	for (let i=0; i<lectureInfo.content.length; i++){
 		let contentInfo = lectureInfo.content[i];
 
-		let section = document.createElement("div");
-		section.classList.add("learn-section");
+		let contentSection = document.createElement("div");
+		contentSection.classList.add("learn-section");
 
-		section.innerHTML = "<h2>"+contentInfo.title+"</h2>" + (await fetchHtmlAsText("learn-panel-html/"+contentInfo.panel));
+		contentSection.innerHTML = "<h2>"+contentInfo.title+"</h2>" + (await fetchHtmlAsText("learn-panel-html/"+contentInfo.panel));
 
-		listPanelsContainer.appendChild(section);
+		listPanelsContainer.appendChild(contentSection);
 
-		if (lectureInfo.config){
-			if (lectureInfo.config.type == "learn-typing-spell"){
+		if (contentInfo.config){
+			if (contentInfo.config.type == "learn-typing-spell"){
+				// console.log(contentInfo.config["list-spell"]);
+				let listInstructionEl = contentSection.querySelector(":scope .list_typing_rule");
+				listInstructionEl.innerHTML = "";
+				for (let j=0; j<contentInfo.config["list-spell"].length; j++){
+					let spell = contentInfo.config["list-spell"][j];
+					let instructionEl = document.createElement("div");
+					instructionEl.innerHTML = `<p>${spell}</p>
+						<div data-keyboard="steno-keyboard.html"></div>`;
+					listInstructionEl.appendChild(instructionEl);
+				}
 
-			}else if (lectureInfo.config.type == "practice-spell"){
+				let titleEl = contentSection.querySelector(":scope .lecture_steno_type_rule h3");
+				titleEl.innerHTML = "Học gõ các âm: " + lectureInfo.name;
+			}else if (contentInfo.config.type == "practice-spell"){
 
 			}
 		}

@@ -96,7 +96,7 @@
 			<div>
 				<h1>
                     <i class="fa fa-feather-alt"></i>
-                    Shakesphere Challenge For Pro 2nd 2020
+                    Chung kết đánh máy miền Bắc 2020
                     <i class="fa fa-feather-alt"></i>
                 </h1>
                 <div id="TimeCounter">
@@ -184,13 +184,234 @@
 		<p>Copyright &copy; 2020 Steno</p>
 	</footer>
 
-	<script type="text/javascript">
-		window.addEventListener("load", (event)=>{
-			loadKeyboards();
-		})
-	</script>
+    <script type="text/javascript">
+        window.addEventListener("load", (event)=>{
+            loadKeyboards();
+        })
 
-	<script type="text/javascript" src="resources/js/jquery-2.1.0.min.js"></script>
-	<!-- <script type="text/javascript" src="resources/js/ploverdemo.js"></script> -->
+        const layoutId = '1';
+
+        let listKey = [];
+        let key;
+
+        key = {
+            idLayout: 0,
+            priority: 1,
+            keyQwerty: 81,
+            valueQwerty: "q",
+            valueSteno: "S-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 1,
+            priority: 3,
+            keyQwerty: 87,
+            valueQwerty: "w",
+            valueSteno: "K-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 2,
+            priority: 5,
+            keyQwerty: 69,
+            valueQwerty: "e",
+            valueSteno: "R-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 3,
+            priority: 7,
+            keyQwerty: 82,
+            valueQwerty: "r",
+            valueSteno: "N-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 4,
+            priority: 8,
+            keyQwerty: 84,
+            valueQwerty: "t",
+            valueSteno: "-H"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 5,
+            priority: 10,
+            keyQwerty: 85,
+            valueQwerty: "u",
+            valueSteno: "*"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 6,
+            priority: 16,
+            keyQwerty: 73,
+            valueQwerty: "i",
+            valueSteno: "-W"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 7,
+            priority: 18,
+            keyQwerty: 79,
+            valueQwerty: "o",
+            valueSteno: "-J"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 8,
+            priority: 19,
+            keyQwerty: 80,
+            valueQwerty: "p",
+            valueSteno: "-N"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 9,
+            priority: 21,
+            keyQwerty: 219,
+            valueQwerty: "[",
+            valueSteno: "-T"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 10,
+            priority: 2,
+            keyQwerty: 65,
+            valueQwerty: "a",
+            valueSteno: "T-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 11,
+            priority: 4,
+            keyQwerty: 83,
+            valueQwerty: "s",
+            valueSteno: "P-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 12,
+            priority: 6,
+            keyQwerty: 68,
+            valueQwerty: "d",
+            valueSteno: "H-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 13,
+            priority: 7,
+            keyQwerty: 70,
+            valueQwerty: "f",
+            valueSteno: "N-"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 14,
+            priority: 9,
+            keyQwerty: 71,
+            valueQwerty: "g",
+            valueSteno: "-S"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 15,
+            priority: 11,
+            keyQwerty: 74,
+            valueQwerty: "j",
+            valueSteno: "-I"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 16,
+            priority: 17,
+            keyQwerty: 75,
+            valueQwerty: "k",
+            valueSteno: "-Y"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 17,
+            priority: 18,
+            keyQwerty: 76,
+            valueQwerty: "l",
+            valueSteno: "-J"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 18,
+            priority: 20,
+            keyQwerty: 186,
+            valueQwerty: ";",
+            valueSteno: "-G"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 19,
+            priority: 22,
+            keyQwerty: 222,
+            valueQwerty: "'",
+            valueSteno: "-K"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 20,
+            priority: 12,
+            keyQwerty: 67,
+            valueQwerty: "c",
+            valueSteno: "-U"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 21,
+            priority: 13,
+            keyQwerty: 86,
+            valueQwerty: "v",
+            valueSteno: "-O"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 22,
+            priority: 14,
+            keyQwerty: 78,
+            valueQwerty: "n",
+            valueSteno: "-E"
+        };
+        listKey.push(key);
+
+        key = {
+            idLayout: 23,
+            priority: 15,
+            keyQwerty: 77,
+            valueQwerty: "m",
+            valueSteno: "-A"
+        };
+        listKey.push(key);
+    </script>
+
+    <script type="text/javascript" src="resources/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="resources/js/ploverdemo.js"></script>
 </body>
 </html>	

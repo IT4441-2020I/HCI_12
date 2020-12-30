@@ -66,9 +66,7 @@ function loadLearningPath(text_json){
 				lectureEl.classList.add("failue");
 				icon = "<i class='fas fa-undo-alt'></i>";
 			}
-
-
-
+			
 			lectureEl.innerHTML = `
 				<div>
          			<div class="content-title">
